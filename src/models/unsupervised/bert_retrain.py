@@ -1,5 +1,6 @@
 __all__ = ['FurtherTrainBERT']
 
+import pandas as pd
 from transformers import AutoTokenizer
 
 from transformers import AutoModelForMaskedLM
@@ -8,7 +9,6 @@ from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import Trainer
 
-from datasets import load_dataset
 
 import math
 
@@ -26,10 +26,11 @@ class FurtherTrainBERT:
     # TODO add kwarg** for more hyperparameters
     # TODO unit test
     # TODO hyperparameter tuning
-    def __init__(self, checkpoint: str, dataset_path: str,
+    def __init__(self, checkpoint: str,
+                 dataset_path: str = None, df: pd.DataFrame = None,
                  sentence_colname: str = "title",
-                 chunk_size: int = 128, batch_size: int = 64,
                  model_name: str = 'bert-japanese-finetuned-meisho',
+                 chunk_size: int = 128, batch_size: int = 64,
                  split_size: float = 0.2):
         """
         :param checkpoint: model name of pretrain BERT of Hugging Face
@@ -42,6 +43,7 @@ class FurtherTrainBERT:
 
         self.checkpoint = checkpoint
         self.dataset_path = dataset_path
+        self.df = df
 
         self.tokenizer = AutoTokenizer.from_pretrained(self.checkpoint)
         self.model = AutoModelForMaskedLM.from_pretrained(self.checkpoint)
@@ -86,12 +88,28 @@ class FurtherTrainBERT:
 
         return result
 
+    def loader(self):
+
+        """ Load data with Hugging Face format
+        :return: Hugging Face Dataframe"""
+        if self.dataset_path!= None:
+
+            from datasets import load_dataset
+            data_files = {"unsupervised": self.dataset_path}
+            dataset = load_dataset("csv", data_files=data_files)
+
+        elif self.dataset!= None: # Pandas DataFrame to Hugging Face
+
+            from datasets import Dataset
+            #df = pd.DataFrame({"a": [1, 2, 3]})
+            dataset = Dataset.from_pandas(self.df)
+        else: print("Plead add data path or a dataset")
+
+        return dataset
+
     def runner(self):
-
         #################### Load Data ####################
-
-        data_files = {"unsupervised": self.dataset_path}
-        meisho_dataset = load_dataset("csv", data_files=data_files)
+        meisho_dataset = self.loader()
 
         #################### Preprocessing ####################
 

@@ -1,7 +1,7 @@
 from enum import auto
 from strenum import StrEnum
 
-from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDatasetOptions
+from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 
 from tasks.ner_places.gazetteer import ModelGazetteer
 from tasks.ner_places.geolod import ModelGeolod
@@ -18,7 +18,7 @@ def main() -> None:
 
     model_run = [NerModel.GAZETTEER, NerModel.GEOLOD]
 
-    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDatasetOptions.TEST_TITLE).loader()
+    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE).loader()
 
     if NerModel.GAZETTEER in model_run:
         ModelGazetteer(df_test).runner()

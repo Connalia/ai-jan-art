@@ -14,7 +14,7 @@ from ast import literal_eval
 
 from sklearn.metrics import classification_report
 
-from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDatasetOptions
+from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 from tasks.ner_places.utils import extract_tags_per_char, change_string_to_int_tags
 
 
@@ -51,5 +51,5 @@ class ModelGeolod():
 ######################################################################
 
 if __name__ == "__main__":
-    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDatasetOptions.TEST_TITLE).loader()
+    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE).loader()
     ModelGeolod(df_test).runner()

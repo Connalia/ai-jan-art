@@ -1,4 +1,4 @@
-__all__ = ["UkiyoDataLoader", "UkiyoDatasetOptions"]
+__all__ = ["UkiyoDataLoader", "UkiyoDataOptions"]
 
 from src.utils.print_custom import printBeautyTable
 from src.utils.options import Options
@@ -14,14 +14,14 @@ import pandas as pd
 # from strenum import StrEnum
 # TRAIN_TITLE = auto() not work yet with auto
 
-class UkiyoDatasetOptions(Options):
+class UkiyoDataOptions(Options):
     """ Available Ukiyo-e Datasets"""
 
-    # Class variable
+    # Sorted Class Variable
     TRAIN_TITLE = 'TRAIN_TITLE'  # train_place.csv: train set with annonated tag PLACE
     TEST_TITLE = 'TEST_TITLE'  # test_place.csv: test set with annonated tag PLACE
-    MEISHO = 'MEISHO'  # arc_meisho.csv: whole dataset without annotations
     FULL_MEISHO = 'FULL_MEISHO'  # arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info
+    MEISHO = 'MEISHO'  # arc_meisho.csv: whole dataset without annotations
 
     @staticmethod
     def meta_info():
@@ -34,8 +34,8 @@ class UkiyoDatasetOptions(Options):
         +-------------+--------------------------------------------------------------------------------------+
         |   Variable  |                                         Name                                         |
         +-------------+--------------------------------------------------------------------------------------+
-        | FULL_MEISHO |                  arc_meisho.csv: whole dataset without annotations                   |
-        |    MEISHO   | arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info |
+        |    MEISHO   |                  arc_meisho.csv: whole dataset without annotations                   |
+        | FULL_MEISHO | arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info |
         |  TEST_TITLE |                  test_place.csv: test set with annonated tag PLACE                   |
         | TRAIN_TITLE |                 train_place.csv: train set with annonated tag PLACE                  |
         +-------------+--------------------------------------------------------------------------------------+
@@ -43,12 +43,12 @@ class UkiyoDatasetOptions(Options):
 
         names = ['train_place.csv: train set with annonated tag PLACE',
                  'test_place.csv: test set with annonated tag PLACE',
-                 'arc_meisho.csv: whole dataset without annotations',
                  'arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info'
+                 'arc_meisho.csv: whole dataset without annotations',
                  ]
         print('Information for variables:')
         table = [list(zipped) for zipped in
-                 zip(UkiyoDatasetOptions.get_string_options(), sorted(names))]  # combine list
+                 zip(UkiyoDataOptions.get_string_options(), sorted(names))]  # combine list
         printBeautyTable(table)
 
 
@@ -93,21 +93,21 @@ class UkiyoDataLoader:
         Select and load the available datasets
         """
 
-        if self.type_of_dataset == UkiyoDatasetOptions.TRAIN_TITLE:
+        if self.type_of_dataset == UkiyoDataOptions.TRAIN_TITLE:
 
             self.df_ukiyo = pd.read_csv(self.data_path + 'train_place.csv')
 
             # column of csv as dtype list
             self.df_ukiyo['entities'] = self.df_ukiyo['entities'].apply(literal_eval)
 
-        elif self.type_of_dataset == UkiyoDatasetOptions.TEST_TITLE:
+        elif self.type_of_dataset == UkiyoDataOptions.TEST_TITLE:
 
             self.df_ukiyo = pd.read_csv(self.data_path + 'test_place.csv')
 
             # column of csv as dtype list
             self.df_ukiyo['entities'] = self.df_ukiyo['entities'].apply(literal_eval)
 
-        elif self.type_of_dataset == UkiyoDatasetOptions.MEISHO:
+        elif self.type_of_dataset == UkiyoDataOptions.MEISHO:
 
             self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho.csv')
 
@@ -116,14 +116,14 @@ class UkiyoDataLoader:
 
             self.df_ukiyo = self.extract_title(self.df_ukiyo)
 
-        elif self.type_of_dataset == UkiyoDatasetOptions.FULL_MEISHO:
+        elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO:
 
             self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho_full.csv')
 
         else:
             print('Please select valid dataset:')
-            print(UkiyoDatasetOptions().get_user_options())
-            print(UkiyoDatasetOptions().meta_info())
+            print(UkiyoDataOptions().get_user_options())
+            print(UkiyoDataOptions().meta_info())
 
         return self.df_ukiyo
 
@@ -131,7 +131,7 @@ class UkiyoDataLoader:
 ######################################################################
 
 if __name__ == "__main__":
-    df_ukiyo = UkiyoDataLoader(type_of_dataset=UkiyoDatasetOptions().MEISHO,
+    df_ukiyo = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions().MEISHO,
                                data_path='../data/').loader()
     df_ukiyo.to_csv('../data/arc_meisho_full.csv', index=False)
     print(df_ukiyo)
