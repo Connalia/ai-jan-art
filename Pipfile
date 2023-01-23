@@ -12,6 +12,7 @@ enum34 = "*"
 strenum = "*"
 sklearn = "*"
 openpyxl = "*"
+prettytable = "*"
 
 [dev-packages]
 

@@ -10,7 +10,7 @@ from tqdm import tqdm
 import itertools
 from sklearn.metrics import classification_report
 
-from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataset
+from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDatasetOptions
 from tasks.ner_places.utils import extract_tags_per_char, change_string_to_int_tags
 
 
@@ -85,5 +85,5 @@ class ModelGazetteer():
 ######################################################################
 
 if __name__ == "__main__":
-    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataset.TEST_TITLE).loader()
+    df_test = UkiyoDataLoader(type_of_dataset=UkiyoDatasetOptions.TEST_TITLE).loader()
     ModelGazetteer(df_test).runner()
