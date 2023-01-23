@@ -8,7 +8,7 @@
 
 If there is not exist the specific Python version (which we want to install) in your PC.
 
-Follow the instructions how to ''**install `pyenv`**''
+Follow the instructions how to ''**install `pyenv`**'' on Windows:
 
 - right click on the windows icon on windows bar
 - select 'windowPowerShell (admin)'
