@@ -15,9 +15,9 @@ Ukiyo-e Portal Database + with extra column without unsuseful metainfo
 | 網走川           | あばしりがわ        | Abashiri Gawa      | 144゜ 14’ | 44゜ 00’ | River          |
 | 網走湖           | あばしりこ          | Abashiri Ko        | 144゜ 10’ | 43゜ 58’ | Lake           |
 
-**NOTE** 
+    **NOTE** 
 
-other purchased Japan dataset: https://simplemaps.com/data/jp-cities
+    other purchased Japan dataset: https://simplemaps.com/data/jp-cities
 
 
 - `train_place.csv`: the annotated train ukiyo-e dataset with tag PLACE (last updated 2022/02/22)
