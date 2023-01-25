@@ -8,7 +8,7 @@ Ukiyo-e Portal Database
 Ukiyo-e Portal Database + with extra column without unsuseful metainfo
 
 - `jap_gazetteer.xlsx`: Gazetteer of Japan from https://www.gsi.go.jp/ENGLISH/pape_e300284.html 
-(last updated 2007) . The dataset extract from doc/!data/gsi_japan_000042053.pdf
+(last updated 2007) . The dataset extract from pfd that existi in the folloing path: doc/!data/gsi_japan_000042053.pdf
 
 | Japanese (Kanji) | Japanese (Hiragana) | Romanized Japanese | Longitude | Latitude | Classification |
 |------------------|---------------------|--------------------|-----------|----------|----------------|
