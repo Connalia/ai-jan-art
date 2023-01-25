@@ -4,7 +4,7 @@ for places that extract from  Bert model
 - `arc_meisho.csv`: the whole dataset with ukiyo-e from Art Research Center's
 Ukiyo-e Portal Database
 
-- `arc_meisho.csv`: the whole dataset with ukiyo-e from Art Research Center's
+- `arc_meisho_full.csv`: the whole dataset with ukiyo-e from Art Research Center's
 Ukiyo-e Portal Database + with extra column without unsuseful metainfo
 
 - `jap_gazetteer.xlsx`: Gazetteer of Japan from https://www.gsi.go.jp/ENGLISH/pape_e300284.html 
