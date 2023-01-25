@@ -1,5 +1,5 @@
 - `info_location.csv`: include meta data, like Latitude and Longitude 
-for places that extract from model
+for places that extract from  Bert model
 
 - `arc_meisho.csv`: the whole dataset with ukiyo-e from Art Research Center's
 Ukiyo-e Portal Database
