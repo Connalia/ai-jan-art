@@ -10,6 +10,7 @@ Ukiyo-e Portal Database + with extra column without unsuseful metainfo
 - `jap_gazetteer.xlsx`: Gazetteer from [Geospatial Information Authority of Japan (GSI)](https://www.gsi.go.jp/ENGLISH/pape_e300284.html)
 (last updated 2007) . The dataset extracts from [gsi_japan_000042053.pdf](https://github.com/Connalia/ai-jan-art/blob/main/doc/!data/gsi_japan_000042053.pdf)
 
+Sample:
 | Japanese (Kanji) | Japanese (Hiragana) | Romanized Japanese | Longitude | Latitude | Classification |
 |------------------|---------------------|--------------------|-----------|----------|----------------|
 | 網走川           | あばしりがわ        | Abashiri Gawa      | 144゜ 14’ | 44゜ 00’ | River          |
