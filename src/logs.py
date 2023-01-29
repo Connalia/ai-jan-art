@@ -1,6 +1,6 @@
 import logging
 
-from tasks.globals import LOG_LEVEL
+from src.globals import LOG_LEVEL
 
 # # https://www.delftstack.com/howto/python/python-logging-to-file-and-console/
 # # Use the logging Module to Print the Log Message to File and Console in Python

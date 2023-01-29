@@ -9,9 +9,9 @@ from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import Trainer
 
+from src.logs import *
 
 import math
-
 
 SEED = 42
 
@@ -31,7 +31,8 @@ class FurtherTrainBERT:
                  sentence_colname: str = "title",
                  model_name: str = 'bert-japanese-finetuned-meisho',
                  chunk_size: int = 128, batch_size: int = 64,
-                 split_size: float = 0.2):
+                 split_size: float = 0.2,
+                 *args, **kwargs):
         """
         :param checkpoint: model name of pretrain BERT of Hugging Face
         :param dataset_path: dataset path that load the dataset through hugging face format
@@ -54,6 +55,11 @@ class FurtherTrainBERT:
 
         self.sentence_colname = sentence_colname
         self.model_name = model_name
+
+        defaults_model_hyperparam = {'random_state': SEED}
+        self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
+        extend_logging.meta_info(f"args: {args}")
+        extend_logging.meta_info(f"kwargs: {self.updated_values}")
 
     def tokenize_function(self, examples):
         result = self.tokenizer(examples[self.sentence_colname])
@@ -89,38 +95,66 @@ class FurtherTrainBERT:
         return result
 
     def loader(self):
-
         """ Load data with Hugging Face format
-        :return: Hugging Face Dataframe"""
-        if self.dataset_path!= None:
+        For example:DatasetDict({
+                        unsupervised: Dataset({
+                            features: ['title', 'link', 'full_title'],
+                            num_rows: 20346
+                        })
+                    })
 
+        :return: DatasetDict = Hugging Face Dataset Dict
+        """
+        if self.dataset_path is not None:
             from datasets import load_dataset
             data_files = {"unsupervised": self.dataset_path}
-            dataset = load_dataset("csv", data_files=data_files)
+            dataset_dict = load_dataset("csv", data_files=data_files)
 
-        elif self.dataset!= None: # Pandas DataFrame to Hugging Face
+            # dataset = dataset_dict["unsupervised"]
 
+        elif self.df is not None:  # Pandas DataFrame to Hugging Face
             from datasets import Dataset
-            #df = pd.DataFrame({"a": [1, 2, 3]})
             dataset = Dataset.from_pandas(self.df)
-        else: print("Plead add data path or a dataset")
 
-        return dataset
+            '''
+                        Create a Dataset Dict Format
+                        From
+                        Dataset({
+                            features: ['title', 'link', 'full_title'],
+                            num_rows: 20346
+                        })
+                        To
+                        DatasetDict({
+                            unsupervised: Dataset({
+                                features: ['title', 'link', 'full_title'],
+                                num_rows: 20346
+                            })
+                        })
+                        '''
+            from datasets import DatasetDict
+            dataset_dict = DatasetDict()
+            dataset_dict['unsupervised'] = dataset
+
+        else:  # user select not exist dataframe or path
+            extend_logging.error('Not valid dataframe or data path on BERT Mask Language Model')
+            exit()
+
+        return dataset_dict
 
     def runner(self):
-        #################### Load Data ####################
+
+        # LOAD DATASET -------------------------------------------------------------------------------------------------
         meisho_dataset = self.loader()
 
-        #################### Preprocessing ####################
+        # PREPROCESSING ------------------------------------------------------------------------------------------------
 
-        meisho_features = meisho_dataset["unsupervised"].features.keys()
+        meisho_features = meisho_dataset["unsupervised"].features.keys()  # eg dict_keys(['title', 'link'])
 
         # tokinize text
         tokenized_datasets = meisho_dataset.map(
             self.tokenize_function,
             batched=True,  # use batched=True to activate fast multithreading!
-            remove_columns=meisho_features
-            # remove all the initial column as we need only tokizised sentece (eg ["title", "entities"])
+            remove_columns=meisho_features  # remove all the init column as we need only tokizised sentece
         )
 
         # split into chunck
@@ -135,9 +169,14 @@ class FurtherTrainBERT:
             train_size=train_size, test_size=test_size, seed=SEED
         )
 
-        #################### Model ####################
+        # MODEL --------------------------------------------------------------------------------------------------------
 
-        # add mask
+        # add [MASK] on labels
+        """
+        Inserting [MASK] tokens at random positions in the inputs using `DataCollatorForLanguageModeling`
+
+        In `DataCollatorForLanguageModeling`, the `mlm_probability` argument that specifies what fraction of the 
+        tokens to mask. We’ll pick 15%, which is the amount used for BERT and a common choice in the literature:"""
         data_collator = DataCollatorForLanguageModeling(tokenizer=self.tokenizer,
                                                         mlm_probability=0.15)
 
@@ -156,7 +195,8 @@ class FurtherTrainBERT:
             per_device_train_batch_size=self.batch_size,
             per_device_eval_batch_size=self.batch_size,
             fp16=True,  # to enable mixed-precision training, which gives us another boost in speed
-            logging_steps=logging_steps  # logging_steps, #to ensure we track the training loss with each epoch
+            logging_steps=logging_steps,  # logging_steps, #to ensure we track the training loss with each epoch
+            **self.updated_values
             # push_to_hub=True,
         )
 
