@@ -23,7 +23,6 @@ class FurtherTrainBERT:
     For more info: see tutorial in notebooks/bert_further_pretrain.ipynb
     """
 
-    # TODO add kwarg** for more hyperparameters
     # TODO unit test
     # TODO hyperparameter tuning
     def __init__(self, checkpoint: str,
@@ -56,7 +55,7 @@ class FurtherTrainBERT:
         self.sentence_colname = sentence_colname
         self.model_name = model_name
 
-        defaults_model_hyperparam = {'random_state': SEED}
+        defaults_model_hyperparam = {}  # {'random_state': SEED}
         self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
         extend_logging.meta_info(f"args: {args}")
         extend_logging.meta_info(f"kwargs: {self.updated_values}")
