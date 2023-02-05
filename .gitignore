@@ -3,8 +3,4 @@
 */__pycache__
 results/*
 *.pyc
-
-doc
-doc/*
-
 # Git Ignore Public Repository
