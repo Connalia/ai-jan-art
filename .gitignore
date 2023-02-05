@@ -4,4 +4,7 @@
 results/*
 *.pyc
 
+doc
+doc/*
+
 # Git Ignore Public Repository
