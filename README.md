@@ -2,7 +2,7 @@
 
 1) Run to command line: `pipenv --python 3.10`
 2) Add the new Interpreter, from the bottom right in Pycharm
-3) Run to command line: `pipenv install`
+3) Run to command line: `pipenv install` or (`PIPENV_DONT_LOAD_ENV=1 pipenv install`)
 
 **Note**
 
