@@ -99,11 +99,11 @@ class NerBERT():
 
     # TODO unit test
     # TODO hyperparameter tuning
-    def __init__(self, checkpoint: str,
-                 dataset_path: str = None, df: pd.DataFrame = None,
-                 sentence_colname: str = "title",
+    def __init__(self,  # sentence_colname: str = "title",
+                 # dataset_path: str = None, df: pd.DataFrame = None,
                  Train: list = None, Test: list = None,
                  list_tags: list = ['O', 'PLACE'],
+                 # checkpoint: str,
                  model_name: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
                  tokinizer_name: str = 'cl-tohoku/bert-base-japanese',
                  MAX_LEN: int = 60,
