@@ -10,10 +10,11 @@ tqdm = "*"
 opencv-python = "*"
 enum34 = "*"
 strenum = "*"
-sklearn = "*"
 openpyxl = "*"
 prettytable = "*"
 python-dotenv = "*"
+scikit-learn = "*"
+transformers = "*"
 
 [dev-packages]
 
