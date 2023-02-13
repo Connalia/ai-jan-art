@@ -218,6 +218,9 @@ class FurtherTrainBERT:
         print(f">>> Perplexity before further pretrain BERT: {math.exp(eval_results_before['eval_loss']):.2f}")
         print(f">>> Perplexity after further pretrain BERT: {math.exp(eval_results['eval_loss']):.2f}")
 
+        trainer.save_model('../' + self.model_name)
+        trainer.save_model(self.model_name)
+        print('Save the model')
         return
 
 
