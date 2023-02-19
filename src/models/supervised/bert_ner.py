@@ -32,6 +32,31 @@ device = 'cuda' if cuda.is_available() else 'cpu'
 extended_logger.extra_info(device)
 
 
+def test_convert_dataframe_tolistTuple():  # Not use in project
+    # initialize list of lists
+    data = [['「東海道　京都名所之内」「四条河原」', [(1, 4, "PLACE"), (5, 7, "PLACE"), (13, 17, "PLACE")]],
+            ['「東海道　京都名所之内」「四条河原」', [(1, 4, "PLACE"), (5, 7, "PLACE"), (13, 17, "PLACE")]]
+            ]
+
+    # Create the pandas DataFrame
+    df = pd.DataFrame(data, columns=['title', 'entities'])
+
+    # print dataframe.
+    extended_logger.dev_info(df.head(3))
+
+    list = [("「東海道　京都名所之内」「四条河原」", {"entities": [(1, 4, "PLACE"), (5, 7, "PLACE"), (13, 17, "PLACE")]}),
+            ("「東海道名所之内」「御能拝見之図」", {"entities": [(1, 4, "PLACE")]})]
+
+    for entity in list:
+        text = entity[0]
+        tags = entity[1]['entities']
+        extended_logger.dev_info(text)
+        extended_logger.dev_info(tags)
+        extended_logger.dev_info('__________')
+
+    extended_logger.dev_info([tuple(x) for x in df.to_numpy()])
+
+
 class DatasetBERT(Dataset):
     def __init__(self, dataframe, tokenizer, MAX_LEN, labels_to_ids):
         self.len = len(dataframe)
@@ -142,18 +167,26 @@ class NerBERT():
         self.training_loader = None
         self.testing_loader = None
 
-    def extract_tags(self, data: list):
+    def extract_tags(self, data: list, format_data: str):
         """
-        :param data: a list with pair of sentecne and spacy tag's dictionary
-        --> Input
-        Train = [("「東海道　京都名所之内」「四条河原」", {"entities":[(1,4,"PLACE"),(5,7,"PLACE"),(13,17,"PLACE")]}),
-                 ("「東海道名所之内」「御能拝見之図」", {"entities":[(1,4,"PLACE")]} ),...,]
+        :param data:
+        :param format_data:
+
+                --> Input : format_data : "list_pos" = a list with pair of sentence and spacy tag's dictionary
+                                                        as extract from spacy.
+                Train = [("「東海道　京都名所之内」「四条河原」", {"entities":[(1,4,"PLACE"),(5,7,"PLACE"),(13,17,"PLACE")]}),
+                         ("「東海道名所之内」「御能拝見之図」", {"entities":[(1,4,"PLACE")]} ),...,]
+
+                --> Input : format_data : "dataframe_pos" = a dataframe with position of spacy tag's .
+                                    title	        entities
+                0	「東海道　京都之内」「大内能上覧図」	[(1, 4, PLACE), (5, 7, PLACE)]
+                1	「東海道　京都名所之内」「四条河原」	[(1, 4, PLACE), (5, 7, PLACE), (13, 17, PLACE)]
 
         :return: A new column with NER tags/labels as list per sentence
-        --> Output
-                            sentence	word_labels
-        「東海道　京都名所之内」「四条河原」	O,O,PLACE,PLACE,O,O,O,O,O,PLACE,PLACE,O,O
-        「東海道名所之内」「御能拝見之図」	O,O,PLACE,O,O,O,O,O,O,O,O,O,O,O,O,O
+                --> Output
+                                    sentence	word_labels
+                「東海道　京都名所之内」「四条河原」	O,O,PLACE,PLACE,O,O,O,O,O,PLACE,PLACE,O,O
+                「東海道名所之内」「御能拝見之図」	O,O,PLACE,O,O,O,O,O,O,O,O,O,O,O,O,O
 
         --> Output Print:
         ------------------------------------
@@ -184,6 +217,9 @@ class NerBERT():
 
         noTag = 'O'
 
+        if format_data == "dataframe_pos":  # convert to list_pos format
+            data = [tuple(x) for x in data.to_numpy()]  # convert dataframe to array of tuples
+
         for entity in tqdm(data):
             ### Title ###
             text = entity[0]
@@ -199,7 +235,11 @@ class NerBERT():
                 tokens)  # eg.['[CLS]', '朝食', 'に', 'を', '焼い', 'て', '食べ', 'まし', '[MASK]', '。', '[SEP]']
             list_encode_title.append(token_ids)  # eg.[2, 25965, 7, 11, 16878, 16, 2949, 3913, 4, 8, 3]
 
-            tags = entity[1]['entities']
+            if format_data == "dataframe_pos":
+                tags = entity[1]
+            else:
+                tags = entity[1]['entities']
+
             print('Tags:', tags)
             print('Number of Tags:', len(tags))
 
@@ -489,3 +529,7 @@ class NerBERT():
         print(f"Validation Accuracy: {eval_accuracy}")
 
         return labels, predictions
+
+
+if __name__ == "__main__":
+    test_dataframe_tolistTuple()
