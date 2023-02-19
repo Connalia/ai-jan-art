@@ -7,4 +7,6 @@ results/*
 doc
 doc/*
 
+src/preprocessing/time_difference.py
+
 # Git Ignore Public Repository
