@@ -1,4 +1,4 @@
-__all__ = ['FurtherTrainBERT']
+__all__ = ['FineTuneBERT']
 
 import pandas as pd
 from transformers import AutoTokenizer
@@ -16,7 +16,7 @@ import math
 SEED = 42
 
 
-class FurtherTrainBERT:
+class FineTuneBERT:
     """
     Mask Language Model further train of Hugging Face pretrain BERT model
 
@@ -57,8 +57,8 @@ class FurtherTrainBERT:
 
         defaults_model_hyperparam = {}  # {'random_state': SEED}
         self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
-        extend_logging.meta_info(f"args: {args}")
-        extend_logging.meta_info(f"kwargs: {self.updated_values}")
+        extended_logger.dev_info(f"args: {args}")
+        extended_logger.dev_info(f"kwargs: {self.updated_values}")
 
     def tokenize_function(self, examples):
         result = self.tokenizer(examples[self.sentence_colname])
@@ -226,5 +226,5 @@ class FurtherTrainBERT:
 ######################################################################
 
 if __name__ == "__main__":
-    FurtherTrainBERT(checkpoint="cl-tohoku/bert-base-japanese",
-                     dataset_path=".../.../.../arc_meisho_full.csv").runner()
+    FineTuneBERT(checkpoint="cl-tohoku/bert-base-japanese",
+                 dataset_path=".../.../.../arc_meisho_full.csv").runner()

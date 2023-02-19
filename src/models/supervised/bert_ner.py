@@ -29,10 +29,10 @@ from torch.utils.data import Dataset, DataLoader
 from torch import cuda
 
 device = 'cuda' if cuda.is_available() else 'cpu'
-print(device)
+extended_logger.extra_info(device)
 
 
-class dataset(Dataset):
+class DatasetBERT(Dataset):
     def __init__(self, dataframe, tokenizer, MAX_LEN, labels_to_ids):
         self.len = len(dataframe)
         self.data = dataframe
@@ -103,8 +103,7 @@ class NerBERT():
                  # dataset_path: str = None, df: pd.DataFrame = None,
                  Train: list = None, Test: list = None,
                  list_tags: list = ['O', 'PLACE'],
-                 # checkpoint: str,
-                 model_name: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
+                 checkpoint: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
                  tokinizer_name: str = 'cl-tohoku/bert-base-japanese',
                  MAX_LEN: int = 60,
                  TRAIN_BATCH_SIZE: int = 4,
@@ -128,15 +127,15 @@ class NerBERT():
         # User add extra Hyperparameters
         defaults_model_hyperparam = {}  # {'random_state': SEED}
         self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
-        extend_logging.meta_info(f"args: {args}")
-        extend_logging.meta_info(f"kwargs: {self.updated_values}")
+        extended_logger.dev_info(f"args: {args}")
+        extended_logger.dev_info(f"kwargs: {self.updated_values}")
 
         # Pretrain Models Name
         self.labels_to_ids = {k: v for v, k in enumerate(list_tags)}  # {'O': 0, 'PLACE': 1}
         self.ids_to_labels = {v: k for v, k in enumerate(list_tags)}  # {0: 'O', 1: 'PLACE'}
         self.tokenizer = AutoTokenizer.from_pretrained(tokinizer_name)
 
-        self.model_name = model_name
+        self.checkpoint = checkpoint
         self.model = None
 
         # Initilize
@@ -293,8 +292,8 @@ class NerBERT():
                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])}
                 """
-        training_set = dataset(train_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
-        testing_set = dataset(test_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
+        training_set = DatasetBERT(train_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
+        testing_set = DatasetBERT(test_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
 
         # for token, label in zip(self.tokenizer.convert_ids_to_tokens(training_set[0]["input_ids"]),
         #                         training_set[0]["labels"]):
@@ -348,7 +347,7 @@ class NerBERT():
 
         # Fine tune BERT Models
         # TODO check difference from BertForSequenceClassification
-        self.model = BertForTokenClassification.from_pretrained(self.model_name,
+        self.model = BertForTokenClassification.from_pretrained(self.checkpoint,
                                                                 num_labels=len(self.labels_to_ids),
                                                                 return_dict=False)
         # model = AutoModel.from_pretrained('cl-tohoku/bert-base-japanese', num_labels=3)

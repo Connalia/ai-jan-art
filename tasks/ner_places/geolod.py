@@ -17,6 +17,8 @@ from sklearn.metrics import classification_report
 from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 from tasks.ner_places.utils import extract_tags_per_char, change_string_to_int_tags
 
+from src.logs import *
+
 
 class ModelGeolod():
 
@@ -24,11 +26,12 @@ class ModelGeolod():
         self.df_test = df_test
 
     def inference(self):
-        print("######### Inference of GeoLOD ######### ")
+        extended_logger.info("######### Inference of GeoLOD ######### ")
+        extended_logger.critical(f"Not Implement yet")  # ToDo
 
     def evaluator(self, actuals, predictions):
-        print('##################### GeoLOD #####################')
-        print(classification_report(actuals, predictions))
+        extended_logger.info('##################### GeoLOD #####################')
+        extended_logger.info(classification_report(actuals, predictions))
 
     def runner(self):
         df_prediction = pd.read_csv('../../results/ner_places/df_geolod.csv')
