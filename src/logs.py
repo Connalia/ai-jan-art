@@ -56,16 +56,18 @@ class ColorFormatter(logging.Formatter):
     bold_red = "\x1b[31;1m"
     reset = "\x1b[0m"
 
-    basic_format = "[%(levelname)s] %(asctime)s %(message)s"
+    basic_format = "[%(levelname)s] %(message)s"
+
+    full_format = "[%(levelname)s] %(asctime)s %(message)s"
 
     FORMATS = {
-        logging.DEBUG: basic_format + reset,
+        logging.DEBUG: full_format + reset,
         logging.INFO: grey + basic_format + reset,
-        logging.WARNING: yellow + basic_format + reset,
-        logging.ERROR: red + basic_format + reset,
-        logging.CRITICAL: bold_red + basic_format + reset,
-        SUCCESS: green + basic_format + reset,
-        DEV_INFO: cyan + basic_format + reset
+        logging.WARNING: yellow + full_format + reset,
+        logging.ERROR: red + full_format + reset,
+        logging.CRITICAL: bold_red + full_format + reset,
+        SUCCESS: green + full_format + reset,
+        DEV_INFO: cyan + full_format + reset
     }
 
     def format(self, record):
