@@ -12,5 +12,7 @@
 #
 # # Git Ignore Public Repository
 # /Pipfile.lock
+
+# # NEW gitignores
 # /notebooks/tutorials/
 # /notebooks/tutorials/*
