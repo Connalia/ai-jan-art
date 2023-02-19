@@ -31,6 +31,7 @@ class FineTuneBERT:
                  model_name: str = 'bert-japanese-finetuned-meisho',
                  chunk_size: int = 128, batch_size: int = 64,
                  split_size: float = 0.2,
+                 epochs: int = 10,
                  *args, **kwargs):
         """
         :param checkpoint: model name of pretrain BERT of Hugging Face
@@ -55,6 +56,7 @@ class FineTuneBERT:
         self.sentence_colname = sentence_colname
         self.model_name = model_name
 
+        self.epochs = epochs
         defaults_model_hyperparam = {}  # {'random_state': SEED}
         self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
         extended_logger.dev_info(f"args: {args}")
@@ -186,11 +188,13 @@ class FineTuneBERT:
             logging_steps = 1
 
         training_args = TrainingArguments(
-            output_dir=self.model_name,
+            output_dir=self.model_name,  # output directory
+            num_train_epochs=self.epochs,  # total number of training epochs
             overwrite_output_dir=True,
             evaluation_strategy="epoch",
             learning_rate=2e-5,
-            weight_decay=0.01,
+            warmup_steps=500,  # number of warmup steps for learning rate scheduler
+            weight_decay=0.01,  # strength of weight decay
             per_device_train_batch_size=self.batch_size,
             per_device_eval_batch_size=self.batch_size,
             fp16=True,  # to enable mixed-precision training, which gives us another boost in speed
