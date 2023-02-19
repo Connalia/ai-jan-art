@@ -126,6 +126,7 @@ class NerBERT():
     # TODO hyperparameter tuning
     def __init__(self,  # sentence_colname: str = "title",
                  # dataset_path: str = None, df: pd.DataFrame = None,
+                 format_data: str = "dataframe_pos",
                  Train: list = None, Test: list = None,
                  list_tags: list = ['O', 'PLACE'],
                  checkpoint: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
@@ -138,6 +139,20 @@ class NerBERT():
                  MAX_GRAD_NORM: int = 10,
                  *args, **kwargs):
 
+        """
+        :param format_data: format TRAIn and Test data
+
+                --> Input : format_data : "list_pos" = a list with pair of sentence and spacy tag's dictionary
+                                                        as extract from spacy.
+                Train = [("「東海道　京都名所之内」「四条河原」", {"entities":[(1,4,"PLACE"),(5,7,"PLACE"),(13,17,"PLACE")]}),
+                         ("「東海道名所之内」「御能拝見之図」", {"entities":[(1,4,"PLACE")]} ),...,]
+
+                --> Input : format_data : "dataframe_pos" = a dataframe with position of spacy tag's .
+                                    title	        entities
+                0	「東海道　京都之内」「大内能上覧図」	[(1, 4, PLACE), (5, 7, PLACE)]
+                1	「東海道　京都名所之内」「四条河原」	[(1, 4, PLACE), (5, 7, PLACE), (13, 17, PLACE)]
+        """
+        self.format_data = format_data
         self.Train = Train
         self.Test = Test
 
@@ -167,11 +182,9 @@ class NerBERT():
         self.training_loader = None
         self.testing_loader = None
 
-    def extract_tags(self, data: list, format_data: str):
+    def extract_tags(self, data: list):
         """
-        :param data:
-        :param format_data:
-
+        :param data: data with a specific format:
                 --> Input : format_data : "list_pos" = a list with pair of sentence and spacy tag's dictionary
                                                         as extract from spacy.
                 Train = [("「東海道　京都名所之内」「四条河原」", {"entities":[(1,4,"PLACE"),(5,7,"PLACE"),(13,17,"PLACE")]}),
@@ -217,7 +230,7 @@ class NerBERT():
 
         noTag = 'O'
 
-        if format_data == "dataframe_pos":  # convert to list_pos format
+        if self.format_data == "dataframe_pos":  # convert to list_pos format
             data = [tuple(x) for x in data.to_numpy()]  # convert dataframe to array of tuples
 
         for entity in tqdm(data):
@@ -235,7 +248,7 @@ class NerBERT():
                 tokens)  # eg.['[CLS]', '朝食', 'に', 'を', '焼い', 'て', '食べ', 'まし', '[MASK]', '。', '[SEP]']
             list_encode_title.append(token_ids)  # eg.[2, 25965, 7, 11, 16878, 16, 2949, 3913, 4, 8, 3]
 
-            if format_data == "dataframe_pos":
+            if self.format_data == "dataframe_pos":
                 tags = entity[1]
             else:
                 tags = entity[1]['entities']
