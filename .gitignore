@@ -7,3 +7,5 @@ results/*
 # Git Ignore Public Repository
 /Pipfile.lock
 
+/doc/
+doc/*
