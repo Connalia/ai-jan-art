@@ -32,7 +32,7 @@ device = 'cuda' if cuda.is_available() else 'cpu'
 print(device)
 
 
-class dataset(Dataset):
+class DatasetBERT(Dataset):
     def __init__(self, dataframe, tokenizer, MAX_LEN, labels_to_ids):
         self.len = len(dataframe)
         self.data = dataframe
@@ -128,8 +128,8 @@ class NerBERT():
         # User add extra Hyperparameters
         defaults_model_hyperparam = {}  # {'random_state': SEED}
         self.updated_values = {**defaults_model_hyperparam, **kwargs}  # overwrite kwargs over default values
-        extend_logging.meta_info(f"args: {args}")
-        extend_logging.meta_info(f"kwargs: {self.updated_values}")
+        extended_logger.dev_info(f"args: {args}")
+        extended_logger.dev_info(f"kwargs: {self.updated_values}")
 
         # Pretrain Models Name
         self.labels_to_ids = {k: v for v, k in enumerate(list_tags)}  # {'O': 0, 'PLACE': 1}
@@ -293,8 +293,8 @@ class NerBERT():
                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])}
                 """
-        training_set = dataset(train_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
-        testing_set = dataset(test_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
+        training_set = DatasetBERT(train_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
+        testing_set = DatasetBERT(test_dataset, self.tokenizer, self.MAX_LEN, self.labels_to_ids)
 
         # for token, label in zip(self.tokenizer.convert_ids_to_tokens(training_set[0]["input_ids"]),
         #                         training_set[0]["labels"]):
