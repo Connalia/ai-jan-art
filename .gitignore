@@ -1,0 +1,19 @@
+# Default ignored files
+.idea
+*/__pycache__
+results/*
+*.pyc
+<<<<<<< HEAD
+# Git Ignore Public Repository
+=======
+
+doc
+doc/*
+
+src/preprocessing/time_difference.py
+tests/preprocessing/test_time_difference.py
+
+# Git Ignore Public Repository
+/Pipfile.lock
+/notebooks/tutorials/
+>>>>>>> main
