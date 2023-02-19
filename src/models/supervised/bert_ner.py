@@ -29,7 +29,7 @@ from torch.utils.data import Dataset, DataLoader
 from torch import cuda
 
 device = 'cuda' if cuda.is_available() else 'cpu'
-print(device)
+extended_logger.extra_info(device)
 
 
 class DatasetBERT(Dataset):
@@ -103,8 +103,7 @@ class NerBERT():
                  # dataset_path: str = None, df: pd.DataFrame = None,
                  Train: list = None, Test: list = None,
                  list_tags: list = ['O', 'PLACE'],
-                 # checkpoint: str,
-                 model_name: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
+                 checkpoint: str = 'cl-tohoku/bert-base-japanese',  # 'bert-japanese-finetuned-meisho',
                  tokinizer_name: str = 'cl-tohoku/bert-base-japanese',
                  MAX_LEN: int = 60,
                  TRAIN_BATCH_SIZE: int = 4,
@@ -136,7 +135,7 @@ class NerBERT():
         self.ids_to_labels = {v: k for v, k in enumerate(list_tags)}  # {0: 'O', 1: 'PLACE'}
         self.tokenizer = AutoTokenizer.from_pretrained(tokinizer_name)
 
-        self.model_name = model_name
+        self.checkpoint = checkpoint
         self.model = None
 
         # Initilize
@@ -348,7 +347,7 @@ class NerBERT():
 
         # Fine tune BERT Models
         # TODO check difference from BertForSequenceClassification
-        self.model = BertForTokenClassification.from_pretrained(self.model_name,
+        self.model = BertForTokenClassification.from_pretrained(self.checkpoint,
                                                                 num_labels=len(self.labels_to_ids),
                                                                 return_dict=False)
         # model = AutoModel.from_pretrained('cl-tohoku/bert-base-japanese', num_labels=3)

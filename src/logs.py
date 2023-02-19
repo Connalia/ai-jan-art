@@ -28,8 +28,10 @@ CRITICAL = 50  # system errors
 
 # EXTEND LOG LEVEL
 DEV_INFO = 18  # use to print extra information
+EXTRA_INFO = 19  # use to print extra information
 SUCCESS = 25
 logging.addLevelName(DEV_INFO, 'DEV_INFO')  # extend log level
+logging.addLevelName(EXTRA_INFO, 'EXTRA_INFO')  # extend log level
 logging.addLevelName(SUCCESS, 'SUCCESS')  # extend log level
 
 
@@ -37,11 +39,16 @@ def dev_info(self, message, *args, **kws):  # extend log level
     self.log(DEV_INFO, message, *args, **kws)  # extend log level
 
 
+def extra_info(self, message, *args, **kws):  # extend log level
+    self.log(EXTRA_INFO, message, *args, **kws)  # extend log level
+
+
 def success(self, message, *args, **kws):  # extend log level
     self.log(SUCCESS, message, *args, **kws)  # extend log level
 
 
 logging.Logger.dev_info = dev_info  # extend log level
+logging.Logger.extra_info = extra_info  # extend log level
 logging.Logger.success = success  # extend log level
 
 
@@ -62,12 +69,13 @@ class ColorFormatter(logging.Formatter):
 
     FORMATS = {
         logging.DEBUG: full_format + reset,
+        DEV_INFO: cyan + full_format + reset,
+        EXTRA_INFO: grey + basic_format + reset,
         logging.INFO: grey + basic_format + reset,
         logging.WARNING: yellow + full_format + reset,
         logging.ERROR: red + full_format + reset,
         logging.CRITICAL: bold_red + full_format + reset,
-        SUCCESS: green + full_format + reset,
-        DEV_INFO: cyan + full_format + reset
+        SUCCESS: green + full_format + reset
     }
 
     def format(self, record):
@@ -89,9 +97,9 @@ extended_logger.addHandler(ch)
 # extended_logger.addHandler(ch)
 def color_test():
     extended_logger.setLevel(DEBUG)
-    extended_logger.debug("COLOR TEST")
     extended_logger.debug("debug")
     extended_logger.dev_info('dev_info')
+    extended_logger.extra_info('extra_info')
     extended_logger.info("info")
     extended_logger.success('success')
     extended_logger.warning("warning")

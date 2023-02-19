@@ -6,6 +6,10 @@ from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 from tasks.ner_places.gazetteer import ModelGazetteer
 from tasks.ner_places.geolod import ModelGeolod
 
+from src.models.unsupervised.bert_retrain import FineTuneBERT
+
+from src.models.supervised.bert_ner import NerBERT
+
 from src.logs import *
 
 '''
@@ -39,9 +43,25 @@ def main(models: list) -> None:
         ModelGeolod(df_test).runner()
         extended_logger.success(f"End Geolod")
     if NerModel.BERT_NER in models:
-        extended_logger.critical(f"Not Implement yet")  # ToDo
+        # --> BERT Transfer learning to NER with labeled Ukiyo-e Titles
+        df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE).loader()
+        df_train = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TRAIN_TITLE).loader()
+        NerBERT(Train=Train, Test=Test, checkpoint='cl-tohoku/bert-base-japanese',
+                tokinizer_name='cl-tohoku/bert-base-japanese').runner()
+
     if NerModel.FINE_TUNE_BERT_NER in models:
-        extended_logger.critical(f"Not Implement yet")  # ToDo
+        # --> BERT Fine-tune to Mask Language Task with All Ukiyo-e Titles
+        df_ukiyo = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.FULL_MEISHO,
+                                   data_path='data/').loader()
+
+        FineTuneBERT(checkpoint="cl-tohoku/bert-base-japanese",
+                     df=df_ukiyo).runner()
+
+        # --> BERT Transfer learning to NER with labeled Ukiyo-e Titles
+        df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE).loader()
+        df_train = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TRAIN_TITLE).loader()
+        NerBERT(Train=Train, Test=Test, checkpoint='bert-japanese-finetuned-meisho',
+                tokinizer_name='cl-tohoku/bert-base-japanese').runner()
 
 
 if __name__ == "__main__":
