@@ -1,3 +1,5 @@
+# Information about dataset
+
 - `info_location.csv`: include meta data, like Latitude and Longitude
   for places that extract from Bert model
 
