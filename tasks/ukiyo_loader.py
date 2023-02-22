@@ -35,7 +35,7 @@ class UkiyoDataOptions(StrEnum):
         +-------------+--------------------------------------------------------------------------------------+
         |   Variable  |                                         Name                                         |
         +-------------+--------------------------------------------------------------------------------------+
-        |    MEISHO   |                  arc_meisho.csv: whole dataset without annotations                   |
+        |    MEISHO   | arc_meisho.csv: whole dataset without annot. + preprocessing to be as  FULL_MEISHO   |
         | FULL_MEISHO | arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info |
         |  TEST_TITLE |                  test_place.csv: test set with annonated tag PLACE                   |
         | TRAIN_TITLE |                 train_place.csv: train set with annonated tag PLACE                  |
@@ -156,6 +156,10 @@ class UkiyoDataLoader:
             self.df_ukiyo = self.df_ukiyo.iloc[:, 1:]
 
             self.df_ukiyo = self.extract_title(self.df_ukiyo)
+
+            # add urls of images
+            self.df_ukiyo.rename(columns={"link": "thub_img_link"}, inplace=True)
+            self.df_ukiyo["actual_img_link"] = self.df_ukiyo["thub_img_link"].str.replace('th_image', 'image')
 
         elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO:
 
