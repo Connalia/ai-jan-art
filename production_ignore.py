@@ -16,3 +16,6 @@
 # # NEW gitignores
 # /notebooks/tutorials/
 # /notebooks/tutorials/*
+
+# /data/extraction/
+# /data/extraction/*
