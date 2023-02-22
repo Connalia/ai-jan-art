@@ -1,98 +1,98 @@
-title,entities
-「東海道五十三次」  「三十八」「藤川」,"[(1, 4, 'PLACE'), (17, 19, 'PLACE')]"
-「東都六玉顔ノ内」  「角田川」,"[(1, 3, 'PLACE'), (12, 15, 'PLACE')]"
-「名所江戸百景」  「猿わか町よるの景」,"[(3, 5, 'PLACE'), (11, 15, 'PLACE')]"
-「江戸名所図会」  「卅二」「三十三間堂」「曽我五郎時宗」,"[(1, 3, 'PLACE'), (15, 20, 'PLACE')]"
-「江戸名所　百人美女」  「今川はし」,"[(1, 3, 'PLACE'), (14, 18, 'PLACE')]"
- 「東海道五十三次の内」  「戸塚藤沢間」「吉田橋」「松若」,"[(2, 4, 'PLACE'), (15, 19, 'PLACE'), (22, 25, 'PLACE'), (27, 29, 'PLACE')]"
- 「江戸名所百人美女」  「今戸」,"[(2, 4, 'PLACE'), (14, 16, 'PLACE')]"
-「東都高名会席尽」  「金子」「助六」,"[(1, 3, 'PLACE')]"
- 「木曽六十九駅」  「草津」「野路玉川」「清玄尼」,"[(2, 4, 'PLACE'), (12, 14, 'PLACE'), (16, 20, 'PLACE')]"
- 「東海道」 「程ケ谷戸塚間」「権太坂」「いがみ」,"[(2, 5, 'PLACE'), (8, 13, 'PLACE'), (16, 19, 'PLACE')]"
- 「両国夕景一ツ目千金」,"[(2, 4, 'PLACE'), (9, 11, 'PLACE')]"
-「見立八景之内」  「清水寺の晩鐘」「清玄阿闍梨」「入間の息女桜姫」,"[(11, 14, 'PLACE')]"
- 「江戸自慢三十六興」  「落合　ほたる」,"[(2, 4, 'PLACE'), (14, 16, 'PLACE')]"
- 「曽我八景自筆鏡」  「十郎祐成」「曽我中村」,"[(2, 4, 'PLACE')]"
- 「東海道五十三次之内」  「御油」「其二」「山本勘助母」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]"
-「東海道」「大津三井寺」,"[(1, 4, 'PLACE'), (6, 11, 'PLACE')]"
-「王城加茂社風景」,"[(3, 6, 'PLACE')]"
-「東海道名所之内」  「深草乃里」「少将つか」「せう／＼さくら」「元政寺」,"[(1, 4, 'PLACE'), (12, 16, 'PLACE'), (33, 36, 'PLACE')]"
-「東海道名所之内」  「淀川」,"[(1, 4, 'PLACE'), (12, 14, 'PLACE')]"
-「東京三芝居町繁栄之図」,"[(1, 3, 'PLACE'), (4, 6, 'PLACE')]"
-「津島牛頭天王」「舟発場」「佐屋川」「本陣」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE'), (19, 21, 'PLACE')]"
- 「東海道」  「浜松」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE')]"
- 「東海道之内」  「岡部」,"[(2, 5, 'PLACE'), (11, 13, 'PLACE')]"
- 「東海道名所之内」  「豊川」,"[(2, 5, 'PLACE'), (13, 15, 'PLACE')]"
-［川口善光寺開帳参詣之図］,"[(1, 6, 'PLACE')]"
- 「東海道」  「島田」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE')]"
-「浅草金竜山之図」,"[(1, 6, 'PLACE')]"
-「東京名所の内」  「浅草区金竜山浅草寺境内一覧」,"[(1, 3, 'PLACE'), (11, 20, 'PLACE')]"
- 「しん板車づくし」  「横浜鉄道図」,"[(13, 15, 'PLACE')]"
- 「東都名所高輪行粧之図」,"[(2, 4, 'PLACE'), (6, 8, 'PLACE')]"
- 「東都名所」  「隅田川花盛」,"[(2, 4, 'PLACE'), (10, 13, 'PLACE')]"
- 「江戸の花名勝会」  「り」「十番組」「一ツ家の賤の女　尾上菊次郎」「浅茅が原衣掛松」,"[(2, 4, 'PLACE'), (36, 40, 'PLACE')]"
-「江戸の花名勝会」  「ち」「十番組」「一ツ家の姥　市川海老蔵」「猿若芝居町」,"[(1, 3, 'PLACE'), (33, 38, 'PLACE')]"
- 「東京三十六景」  「十五」「両国」「十六」「本所一ツ目之橋」,"[(2, 4, 'PLACE'), (16, 18, 'PLACE'), (26, 31, 'PLACE')]"
- 「東京十二月之内」  「二月」「亀井戸天神」「亀井戸梅林」,"[(2, 4, 'PLACE'), (17, 22, 'PLACE'), (24, 29, 'PLACE')]"
- 「東京十二月之内」  「四月」「品川沖之景」,"[(2, 4, 'PLACE'), (17, 19, 'PLACE')]"
- 「東京十二月之内」  「六月」「愛宕之景」「神田神社」,"[(2, 4, 'PLACE'), (17, 19, 'PLACE'), (23, 27, 'PLACE')]"
-「東京開化名所」  「三代徳川家光公」「三河島之景」,"[(1, 3, 'PLACE'), (20, 23, 'PLACE')]"
- 「東京名所競」  「上野東照宮」,"[(2, 4, 'PLACE'), (11, 16, 'PLACE')]"
-「東京銘勝会」  「不忍の競馬」,"[(1, 3, 'PLACE'), (10, 15, 'PLACE')]"
- 「東海道」  「土山」「鈴ヶ山坂ノ下」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE'), (13, 19, 'PLACE')]"
-「堀切花菖蒲」,"[(1, 6, 'PLACE')]"
- 「両国花火之図」,"[(2, 4, 'PLACE')]"
- 「亀戸梅屋敷」,"[(1, 6, 'PLACE')]"
-「東京十二月之内」  「一月」「宮城之春」「九段坂」,"[(1, 3, 'PLACE'), (16, 20, 'PLACE'), (24, 27, 'PLACE')]"
- 「見立十二支」  「丑」「向島」「牛島神社」,"[(14, 16, 'PLACE'), (18, 22, 'PLACE')]"
-「見立十二支」  「辰」「深川八幡」「富士」,"[(13, 17, 'PLACE'), (19, 21, 'PLACE')]"
- 「見立十二支」  「酉」「浅草田甫酉の市」,"[(14, 18, 'PLACE')]"
- 「東海道五拾三次之内」  「大尾」「京師」「三条大橋」,"[(2, 5, 'PLACE'), (19, 21, 'PLACE'), (23, 27, 'PLACE')]"
- 「東海道五拾三次之内」  「日本橋」「行烈振出」,"[(2, 5, 'PLACE'), (15, 18, 'PLACE')]"
- 「東海道五拾三次之内」  「四日市」「三重川」,"[(2, 5, 'PLACE'), (15, 18, 'PLACE'), (20, 23, 'PLACE')]"
- 「東海道五拾三次之内」  「大津」「走井茶屋」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 21, 'PLACE')]"
- 「東海道五拾三次之内」  「平塚」「縄手道」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 22, 'PLACE')]"
- 「東海道五拾三次之内」  「土山」「春之雨」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]"
- 「東海道五拾三次之内」  「日坂」「佐夜ノ中山」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 24, 'PLACE')]"
-「東海道五拾三次之内」  「庄野」「白雨」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]"
- 「江戸名所」  「両国花火」,"[(2, 4, 'PLACE'), (10, 12, 'PLACE')]"
- 「江戸名所」  「芝増上寺前の景」,"[(2, 4, 'PLACE'), (11, 14, 'PLACE')]"
- 「東都名所」  「新吉原五丁町弥生花盛全図」,"[(2, 4, 'PLACE'), (10, 16, 'PLACE')]"
- 「東海道五拾三次之内」  「袋井」「出茶屋ノ図」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 22, 'PLACE')]"
-［江都名所浅草観音の図］,"[(1, 3, 'PLACE'), (5, 9, 'PLACE')]"
-「東京市中馬車往来之図」,"[(1, 3, 'PLACE')]"
-［東京海運橋兜町為換座五階造リ図］,"[(1, 8, 'PLACE')]"
-［久松町劇場久松座繁栄図］,"[(1, 4, 'PLACE')]"
-「東京名所」  「スジカイ　万代橋」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]"
-「東京名所之内」  「高輪海岸鉄道の図」,"[(1, 3, 'PLACE'), (11, 15, 'PLACE')]"
- 「東海道五拾三次之内」  「原」「朝之富士」,"[(2, 5, 'PLACE'), (15, 16, 'PLACE'), (20, 22, 'PLACE')]"
-「横浜名所図会」  「野毛山下蒸気車」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]"
-「東京名所之内」  「上野公園清水堂」,"[(1, 3, 'PLACE'), (11, 18, 'PLACE')]"
-「東海道五拾三次之内」  「見附」「天竜川図」,"[(1, 4, 'PLACE'), (14, 16, 'PLACE'), (18, 22, 'PLACE')]"
-「東京開化三十六景」  「柳橋より浅草橋」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE'), (17, 20, 'PLACE')]"
-「東京名所之内」  「浅草金竜山」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]"
-「伊勢名所」「伊勢土産名所図画」  「二見浦之景」「賓日館及海水景」「六」,"[(1, 3, 'PLACE'), (19, 22, 'PLACE'), (26, 32, 'PLACE')]"
-「大和名所」  「大仏殿」,"[(1, 3, 'PLACE'), (10, 13, 'PLACE')]"
-「大和名所」  「春日神社」「若草山」,"[(1, 3, 'PLACE'), (9, 13, 'PLACE'), (15, 18, 'PLACE')]"
-「府県名所図会」  「兵庫県」「神戸布引滝」「県庁之位地　八部郡神戸」,"[(11, 14, 'PLACE'), (16, 21, 'PLACE'), (29, 34, 'PLACE')]"
- 「神田御社眺望」,"[(2, 6, 'PLACE')]"
- 「大阪名所」  「桜乃宮より造幣局を望む」「天神橋之図」「造幣局」,"[(2, 4, 'PLACE'), (10, 13, 'PLACE'), (23, 26, 'PLACE'), (30, 33, 'PLACE')]"
- 「東海道之内」  「関」,"[(2, 5, 'PLACE')]"
-「観音霊験記」  「秩父順礼廿九番」「笹の戸　見目山　長泉院」,"[(19, 30, 'PLACE')]"
-［東京三井組ハウス］,"[(1, 9, 'PLACE')]"
-「東京名所　浅草観音之図」,"[(1, 3, 'PLACE'), (6, 10, 'PLACE')]"
- 「名所江戸百景」  「鎧の渡し　小網町」,"[(4, 6, 'PLACE'), (16, 20, 'PLACE')]"
-「諸国滝廻リ」  「木曽海道　小野ノ瀑布」,"[(10, 14, 'PLACE')]"
-「五十三次名所図会」「丗二」  「あら井　渡舟着岸御関所」,"[(17, 20, 'PLACE')]"
-「五十三次名所図会　四十」「池鯉鮒　八ツ橋むら　杜若の古せき」,"[(14, 23, 'PLACE')]"
-「五十三次名所図会」「丗八」  「藤川　山中の里別名宮路山」,"[(17, 19, 'PLACE'), (20, 24, 'PLACE'), (26, 29, 'PLACE')]"
-「川崎」  「神奈川へ二リ半」,"[(1, 3, 'PLACE'), (7, 10, 'PLACE')]"
-「江都名所」  「洲崎しほ干狩」,"[(1, 3, 'PLACE'), (9, 11, 'PLACE')]"
-「諸国名橋奇覧」  「摂州安治川口天保山」,"[(11, 20, 'PLACE')]"
-「東都名所」  「永代橋深川新地」,"[(1, 3, 'PLACE'), (9, 16, 'PLACE')]"
-「五十三次名所図会」「一」  「日本橋　東雲の景,"[(17, 20, 'PLACE')]"
-「五十三次名所図会」「六」  「戸塚山道より不二眺望」,"[(16, 20, 'PLACE'), (22, 24, 'PLACE')]"
-「富士三十六景」  「東都佃沖」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]"
-「江戸名所之内」  「真乳山」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]"
-「名所江戸百景」  「千住の大はし」,"[(3, 5, 'PLACE'), (11, 17, 'PLACE')]"
-「諸国名所百景」  「遠州秋葉遠景袋井凧」,"[(13, 15, 'PLACE'), (17, 19, 'PLACE')]"
+title,entities,Genre,Artist,Image URL,Permalink
+「東海道五十三次」  「三十八」「藤川」,"[(1, 4, 'PLACE'), (17, 19, 'PLACE')]", 名所絵  五十三次  美人画, 北斎,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/PVT/Ebi/Prints/Ebi0043.jpg,https://www.dh-jac.net/db/nishikie/Ebi0043/2021d7/
+「東都六玉顔ノ内」  「角田川」,"[(1, 3, 'PLACE'), (12, 15, 'PLACE')]", 美人画  名所絵 , 国貞,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/PVT/Ebi/Prints/Ebi0091.jpg,https://www.dh-jac.net/db/nishikie/Ebi0091/2021d7/
+「名所江戸百景」  「猿わか町よるの景」,"[(3, 5, 'PLACE'), (11, 15, 'PLACE')]", 名所絵 劇場図, 広重,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/PVT/Ebi/Prints/Ebi0305.jpg,https://www.dh-jac.net/db/nishikie/Ebi0305/2021d7/
+「江戸名所図会」  「卅二」「三十三間堂」「曽我五郎時宗」,"[(1, 3, 'PLACE'), (15, 20, 'PLACE')]",  役者絵  名所絵 ,豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/PVT/Ebi/Prints/Ebi0348.jpg,https://www.dh-jac.net/db/nishikie/Ebi0348/2021d7/
+「江戸名所　百人美女」  「今川はし」,"[(1, 3, 'PLACE'), (14, 18, 'PLACE')]", 美人画  名所絵 , 豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/PVT/Ebi/Prints/Ebi0597.jpg,https://www.dh-jac.net/db/nishikie/Ebi0597/2021d7/
+ 「東海道五十三次の内」  「戸塚藤沢間」「吉田橋」「松若」,"[(2, 4, 'PLACE'), (15, 19, 'PLACE'), (22, 25, 'PLACE'), (27, 29, 'PLACE')]", 役者絵  名所絵  見立絵  東海道 , 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731531735/045.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-119/2021d7/
+ 「江戸名所百人美女」  「今戸」,"[(2, 4, 'PLACE'), (14, 16, 'PLACE')]", 美人画  名所絵  江戸名所, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731531735/076.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-151/2021d7/
+「東都高名会席尽」  「金子」「助六」,"[(1, 3, 'PLACE')]", 役者絵  名所絵  見立絵  料理茶屋,豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731531735/095.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-170/2021d7/
+ 「木曽六十九駅」  「草津」「野路玉川」「清玄尼」,"[(2, 4, 'PLACE'), (12, 14, 'PLACE'), (16, 20, 'PLACE')]", 役者絵  名所絵  見立絵  木曽街道, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534433/001.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-175/2021d7/
+ 「東海道」 「程ケ谷戸塚間」「権太坂」「いがみ」,"[(2, 5, 'PLACE'), (8, 13, 'PLACE'), (16, 19, 'PLACE')]", 役者絵  名所絵  見立絵  木曽街道, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534433/009.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-183/2021d7/
+ 「両国夕景一ツ目千金」,"[(2, 4, 'PLACE'), (9, 11, 'PLACE')]", 名所絵  源氏絵  諸国名所, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534433/026.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-195(2)/2021d7/
+「見立八景之内」  「清水寺の晩鐘」「清玄阿闍梨」「入間の息女桜姫」,"[(11, 14, 'PLACE')]",  役者絵  名所絵  見立絵  江戸名所, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534433/048.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-202(1)/2021d7/
+ 「江戸自慢三十六興」  「落合　ほたる」,"[(2, 4, 'PLACE'), (14, 16, 'PLACE')]", 役者絵  見立絵  名所絵 , 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534434/066.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-288/2021d7/
+ 「曽我八景自筆鏡」  「十郎祐成」「曽我中村」,"[(2, 4, 'PLACE')]",名所絵  江戸名所 ,豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534434/083.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-305/2021d7/
+ 「東海道五十三次之内」  「御油」「其二」「山本勘助母」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]", 役者絵  名所絵  舞台姿  見立絵 , 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534597/060.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-375/2021d7/
+「東海道」「大津三井寺」,"[(1, 4, 'PLACE'), (6, 11, 'PLACE')]", 役者絵  名所絵  見立絵  東海道, 豊国,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731531735/024.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-1-99/2021d7/
+「王城加茂社風景」,"[(3, 6, 'PLACE')]", 名所絵  将軍上洛 , 芳年,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534606/070.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-10-12(1)/2021d7/
+「東海道名所之内」  「深草乃里」「少将つか」「せう／＼さくら」「元政寺」,"[(1, 4, 'PLACE'), (12, 16, 'PLACE'), (33, 36, 'PLACE')]", 名所絵  時局絵  神社  尊皇攘夷, 芳艶,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534606/094.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-13-2(1)/2021d7/
+「東海道名所之内」  「淀川」,"[(1, 4, 'PLACE'), (12, 14, 'PLACE')]",名所絵  時局絵  東海道  将軍上洛, 芳艶,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534606/097.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-13-4/2021d7/
+「東京三芝居町繁栄之図」,"[(1, 3, 'PLACE'), (4, 6, 'PLACE')]", 名所絵  時局絵  東海道  将軍上洛, 芳艶,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534606/098.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-13-5/2021d7/
+「津島牛頭天王」「舟発場」「佐屋川」「本陣」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE'), (19, 21, 'PLACE')]",名所絵  東京名所, 芳虎,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534607/018.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-14-12/2021d7/
+ 「東海道」  「浜松」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE')]", 時局絵  名所絵  東海道  将軍上洛 , 芳盛,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534607/050.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-17-2/2021d7/
+ 「東海道之内」  「岡部」,"[(2, 5, 'PLACE'), (11, 13, 'PLACE')]", 時局絵  名所絵  東海道  将軍上洛, 芳盛,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534607/051.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-17-3/2021d7/
+ 「東海道名所之内」  「豊川」,"[(2, 5, 'PLACE'), (13, 15, 'PLACE')]", 時局絵  名所絵  東海道  将軍上洛 , 芳盛,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534607/052.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-17-4/2021d7/
+［川口善光寺開帳参詣之図］,"[(1, 6, 'PLACE')]", 美人画  名所絵  風俗・娯楽  東京名所  花火・納涼, 国周,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534607/093.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-18-26(2)/2021d7/
+ 「東海道」  「島田」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE')]",名所絵  時局絵  東海道  将軍上洛,国周,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534608/079.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-18-88/2021d7/
+「浅草金竜山之図」,"[(1, 6, 'PLACE')]", 名所絵  信仰  諸国名所  寺社開帳,国郷,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/032.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-2-2(3)/2021d7/
+「東京名所の内」  「浅草区金竜山浅草寺境内一覧」,"[(1, 3, 'PLACE'), (11, 20, 'PLACE')]", 名所絵  山水, 米僊,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534609/062.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-21-107/2021d7/
+ 「しん板車づくし」  「横浜鉄道図」,"[(13, 15, 'PLACE')]", 名所絵  時局絵  東海道  将軍上洛 , 国輝,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624882/047.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-21-25/2021d7/
+ 「東都名所高輪行粧之図」,"[(2, 4, 'PLACE'), (6, 8, 'PLACE')]", 名所絵  東京名所, 立祥,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624882/090.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-21-40(1)/2021d7/
+ 「東都名所」  「隅田川花盛」,"[(2, 4, 'PLACE'), (10, 13, 'PLACE')]", 名所絵  東京名所, 国利,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624883/015.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-21-49(1)/2021d7/
+ 「江戸の花名勝会」  「り」「十番組」「一ツ家の賤の女　尾上菊次郎」「浅茅が原衣掛松」,"[(2, 4, 'PLACE'), (36, 40, 'PLACE')]", 名所絵  東京名所, 豊重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624883/060.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-21-80/2021d7/
+「江戸の花名勝会」  「ち」「十番組」「一ツ家の姥　市川海老蔵」「猿若芝居町」,"[(1, 3, 'PLACE'), (33, 38, 'PLACE')]",  時局絵  戊辰戦争, 不詳,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624883/063.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-22-1(1)/2021d7/
+ 「東京三十六景」  「十五」「両国」「十六」「本所一ツ目之橋」,"[(2, 4, 'PLACE'), (16, 18, 'PLACE'), (26, 31, 'PLACE')]", 名所絵  江戸名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624883/087.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-22-14/2021d7/
+ 「東京十二月之内」  「二月」「亀井戸天神」「亀井戸梅林」,"[(2, 4, 'PLACE'), (17, 22, 'PLACE'), (24, 29, 'PLACE')]", 役者絵  名所絵  見立絵  江戸名所, 豊国,https://www.dh-jac.net/db/nishikie/H-22-1-24-1(1)/2021d7/,https://www.dh-jac.net/db/nishikie/H-22-1-24-1(1)/2021d7/
+ 「東京十二月之内」  「四月」「品川沖之景」,"[(2, 4, 'PLACE'), (17, 19, 'PLACE')]", 役者絵  名所絵  見立絵  江戸名所,,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/074.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-24-2(1)/2021d7/
+ 「東京十二月之内」  「六月」「愛宕之景」「神田神社」,"[(2, 4, 'PLACE'), (17, 19, 'PLACE'), (23, 27, 'PLACE')]", 名所絵  東京名所 , 一景,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/075.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-1(1)/2021d7/
+「東京開化名所」  「三代徳川家光公」「三河島之景」,"[(1, 3, 'PLACE'), (20, 23, 'PLACE')]",美人画  名所絵  市井美人  東京名所  石版画, 尾竹　国一,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/085.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-11/2021d7/
+ 「東京名所競」  「上野東照宮」,"[(2, 4, 'PLACE'), (11, 16, 'PLACE')]", 美人画  名所絵  市井美人  東京名所  石版画, 尾竹　国一,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/087.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-13/2021d7/
+「東京銘勝会」  「不忍の競馬」,"[(1, 3, 'PLACE'), (10, 15, 'PLACE')]", 美人画  名所絵  市井美人  東京名所  石版画, 国一,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/089.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-15/2021d7/
+ 「東海道」  「土山」「鈴ヶ山坂ノ下」,"[(2, 5, 'PLACE'), (9, 11, 'PLACE'), (13, 19, 'PLACE')]", 武者絵・歴史画  名所絵  徳川将軍家  東京名所, 暁斎、豊二,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/090.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-16/2021d7/
+「堀切花菖蒲」,"[(1, 6, 'PLACE')]", 名所絵  東京名所,周延,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/091.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-17/2021d7/
+ 「両国花火之図」,"[(2, 4, 'PLACE')]", 名所絵  東京名所  ,国利,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/094.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-20/2021d7/
+ 「亀戸梅屋敷」,"[(1, 6, 'PLACE')]", 名所絵  時局絵  東海道  将軍上洛,暁斎,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/095.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-21/2021d7/
+「東京十二月之内」  「一月」「宮城之春」「九段坂」,"[(1, 3, 'PLACE'), (16, 20, 'PLACE'), (24, 27, 'PLACE')]",名所絵  東京名所 , 清親,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/077.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-3(1)/2021d7/
+ 「見立十二支」  「丑」「向島」「牛島神社」,"[(14, 16, 'PLACE'), (18, 22, 'PLACE')]", 名所絵  東京名所 , 清親,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/078.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-4(1)/2021d7/
+「見立十二支」  「辰」「深川八幡」「富士」,"[(13, 17, 'PLACE'), (19, 21, 'PLACE')]", 名所絵  東京名所, 清親,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/079.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-5(1)/2021d7/
+ 「見立十二支」  「酉」「浅草田甫酉の市」,"[(14, 18, 'PLACE')]",美人画  名所絵  市井美人  東京名所  石版画, 尾竹　国一,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624884/080.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-25-6(1)/2021d7/
+ 「東海道五拾三次之内」  「大尾」「京師」「三条大橋」,"[(2, 5, 'PLACE'), (19, 21, 'PLACE'), (23, 27, 'PLACE')]", 美人画  名所絵  市井美人  東京名所, 周延、延弘,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624885/030.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-26-25/2021d7/
+ 「東海道五拾三次之内」  「日本橋」「行烈振出」,"[(2, 5, 'PLACE'), (15, 18, 'PLACE')]",美人画  名所絵  市井美人  東京名所, 周延、延房,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624885/033.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-26-28/2021d7/
+ 「東海道五拾三次之内」  「四日市」「三重川」,"[(2, 5, 'PLACE'), (15, 18, 'PLACE'), (20, 23, 'PLACE')]", 美人画  名所絵  市井美人  東京名所, 周延、延興,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624885/038.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-26-33/2021d7/
+ 「東海道五拾三次之内」  「大津」「走井茶屋」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 21, 'PLACE')]", 名所絵  東海道,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/045.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-10/2021d7/
+ 「東海道五拾三次之内」  「平塚」「縄手道」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 22, 'PLACE')]",名所絵  東海道 ,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/046.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-11/2021d7/
+ 「東海道五拾三次之内」  「土山」「春之雨」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]", 名所絵  東海道, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/047.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-12/2021d7/
+ 「東海道五拾三次之内」  「日坂」「佐夜ノ中山」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 24, 'PLACE')]",名所絵  東海道 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/049.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-14/2021d7/
+「東海道五拾三次之内」  「庄野」「白雨」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE')]", 名所絵  東海道,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/051.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-16/2021d7/
+ 「江戸名所」  「両国花火」,"[(2, 4, 'PLACE'), (10, 12, 'PLACE')]", 名所絵  東海道, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/053.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-18/2021d7/
+ 「江戸名所」  「芝増上寺前の景」,"[(2, 4, 'PLACE'), (11, 14, 'PLACE')]", 名所絵  東海道 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/056.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-21/2021d7/
+ 「東都名所」  「新吉原五丁町弥生花盛全図」,"[(2, 4, 'PLACE'), (10, 16, 'PLACE')]", 名所絵  東海道, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/061.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-26/2021d7/
+ 「東海道五拾三次之内」  「袋井」「出茶屋ノ図」,"[(2, 5, 'PLACE'), (15, 17, 'PLACE'), (19, 22, 'PLACE')]",  武者絵・歴史画  名所絵  神仏説話  江戸名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/068.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-33/2021d7/
+［江都名所浅草観音の図］,"[(1, 3, 'PLACE'), (5, 9, 'PLACE')]",名所絵  江戸名所,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/072.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-37/2021d7/
+「東京市中馬車往来之図」,"[(1, 3, 'PLACE')]", 名所絵  江戸名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/073.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-38/2021d7/
+［東京海運橋兜町為換座五階造リ図］,"[(1, 8, 'PLACE')]", 名所絵  江戸名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/082.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-45(1)/2021d7/
+［久松町劇場久松座繁栄図］,"[(1, 4, 'PLACE')]", 名所絵  東海道 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/040.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-5/2021d7/
+「東京名所」  「スジカイ　万代橋」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]",, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/093.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-53(3)/2021d7/
+「東京名所之内」  「高輪海岸鉄道の図」,"[(1, 3, 'PLACE'), (11, 15, 'PLACE')]", 名所絵  東京名所,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/001.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-57/2021d7/
+ 「東海道五拾三次之内」  「原」「朝之富士」,"[(2, 5, 'PLACE'), (15, 16, 'PLACE'), (20, 22, 'PLACE')]",名所絵  東京名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/009.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-61(2)/2021d7/
+「横浜名所図会」  「野毛山下蒸気車」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]", 名所絵  東京名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/015.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-63(2)/2021d7/
+「東京名所之内」  「上野公園清水堂」,"[(1, 3, 'PLACE'), (11, 18, 'PLACE')]", 名所絵  東京名所 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/017.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-64/2021d7/
+「東海道五拾三次之内」  「見附」「天竜川図」,"[(1, 4, 'PLACE'), (14, 16, 'PLACE'), (18, 22, 'PLACE')]", 名所絵  東京名所,広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/019.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-66/2021d7/
+「東京開化三十六景」  「柳橋より浅草橋」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE'), (17, 20, 'PLACE')]", 名所絵  東海道, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/042.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-7/2021d7/
+「東京名所之内」  「浅草金竜山」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]", 名所絵  東京名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/026.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-73/2021d7/
+「伊勢名所」「伊勢土産名所図画」  「二見浦之景」「賓日館及海水景」「六」,"[(1, 3, 'PLACE'), (19, 22, 'PLACE'), (26, 32, 'PLACE')]", 名所絵  東京名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/028.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-75/2021d7/
+「大和名所」  「大仏殿」,"[(1, 3, 'PLACE'), (10, 13, 'PLACE')]", 名所絵  東海道, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534598/043.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-8/2021d7/
+「大和名所」  「春日神社」「若草山」,"[(1, 3, 'PLACE'), (9, 13, 'PLACE'), (15, 18, 'PLACE')]",名所絵  東京名所 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/034.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-81/2021d7/
+「府県名所図会」  「兵庫県」「神戸布引滝」「県庁之位地　八部郡神戸」,"[(11, 14, 'PLACE'), (16, 21, 'PLACE'), (29, 34, 'PLACE')]", 名所絵  東京名所, 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534599/039.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-3-86/2021d7/
+ 「神田御社眺望」,"[(2, 6, 'PLACE')]",名所絵  諸国名所  石版画,広瀬　春孝,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/068.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-10-8/2021d7/
+ 「大阪名所」  「桜乃宮より造幣局を望む」「天神橋之図」「造幣局」,"[(2, 4, 'PLACE'), (10, 13, 'PLACE'), (23, 26, 'PLACE'), (30, 33, 'PLACE')]", 名所絵  諸国名所  石版画,錦泉,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/080.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-11-12/2021d7/
+ 「東海道之内」  「関」,"[(2, 5, 'PLACE')]", 名所絵  諸国名所  石版画, 錦泉,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/076.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-11-8/2021d7/
+「観音霊験記」  「秩父順礼廿九番」「笹の戸　見目山　長泉院」,"[(19, 30, 'PLACE')]", 名所絵  諸国名所 , 広重,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/100.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-15-5/2021d7/
+［東京三井組ハウス］,"[(1, 9, 'PLACE')]", 名所絵  江戸名所, 暁斎,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/041.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-8-6/2021d7/
+「東京名所　浅草観音之図」,"[(1, 3, 'PLACE'), (6, 10, 'PLACE')]", 名所絵  大阪名所  石版画,広瀬　春孝,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731624889/054.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-30-9-12/2021d7/
+ 「名所江戸百景」  「鎧の渡し　小網町」,"[(4, 6, 'PLACE'), (16, 20, 'PLACE')]",名所絵  時局絵  東海道  将軍上洛, 国貞,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534603/002.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-5-171/2021d7/
+「諸国滝廻リ」  「木曽海道　小野ノ瀑布」,"[(10, 14, 'PLACE')]", 名所絵  武者絵・歴史画  神仏説話,国貞,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534602/014.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-5-97/2021d7/
+「五十三次名所図会」「丗二」  「あら井　渡舟着岸御関所」,"[(17, 20, 'PLACE')]", 名所絵  東京名所  開化絵, 国輝,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534603/064.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-6-24(2)/2021d7/
+「五十三次名所図会　四十」「池鯉鮒　八ツ橋むら　杜若の古せき」,"[(14, 23, 'PLACE')]", 名所絵  東京名所, 国輝,https://www.rekihaku.ac.jp/GAZO/nishikie/shosai/133731534603/069.jpg,https://www.dh-jac.net/db/nishikie/H-22-1-6-26(1)/2021d7/
+「五十三次名所図会」「丗八」  「藤川　山中の里別名宮路山」,"[(17, 19, 'PLACE'), (20, 24, 'PLACE'), (26, 29, 'PLACE')]", 名所絵, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00026v.jpg,https://www.dh-jac.net/db/nishikie/LOC00026/2021d7/
+「川崎」  「神奈川へ二リ半」,"[(1, 3, 'PLACE'), (7, 10, 'PLACE')]", 名所絵 , 北斎,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00161v.jpg,https://www.dh-jac.net/db/nishikie/LOC00161/2021d7/
+「江都名所」  「洲崎しほ干狩」,"[(1, 3, 'PLACE'), (9, 11, 'PLACE')]",, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00172v.jpg,https://www.dh-jac.net/db/nishikie/LOC00172/2021d7/
+「諸国名橋奇覧」  「摂州安治川口天保山」,"[(11, 20, 'PLACE')]",, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00179v.jpg,https://www.dh-jac.net/db/nishikie/LOC00179/2021d7/
+「東都名所」  「永代橋深川新地」,"[(1, 3, 'PLACE'), (9, 16, 'PLACE')]",,広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00185v.jpg,https://www.dh-jac.net/db/nishikie/LOC00185/2021d7/
+「五十三次名所図会」「一」  「日本橋　東雲の景,"[(17, 20, 'PLACE')]",, 北斎,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00360v.jpg,https://www.dh-jac.net/db/nishikie/LOC00360/2021d7/
+「五十三次名所図会」「六」  「戸塚山道より不二眺望」,"[(16, 20, 'PLACE'), (22, 24, 'PLACE')]",, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00510v.jpg,https://www.dh-jac.net/db/nishikie/LOC00510/2021d7/
+「富士三十六景」  「東都佃沖」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]", 名所絵 ,北斎,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00821v.jpg,https://www.dh-jac.net/db/nishikie/LOC00821/2021d7/
+「江戸名所之内」  「真乳山」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]",, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00852v.jpg,https://www.dh-jac.net/db/nishikie/LOC00852/2021d7/
+「名所江戸百景」  「千住の大はし」,"[(3, 5, 'PLACE'), (11, 17, 'PLACE')]",, 広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=01292v.jpg,https://www.dh-jac.net/db/nishikie/LOC01292/2021d7/
+「諸国名所百景」  「遠州秋葉遠景袋井凧」,"[(13, 15, 'PLACE'), (17, 19, 'PLACE')]",,広重,http://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=01297v.jpg,https://www.dh-jac.net/db/nishikie/LOC01297/2021d7/

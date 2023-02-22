@@ -1,102 +1,102 @@
-title,entities
-「東海道　京都之内」「大内能上覧図」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE')]"
-「東海道　京都名所之内」「四条河原」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE'), (13, 17, 'PLACE')]"
-「東海道名所之内」「御能拝見之図」,"[(1, 4, 'PLACE')]"
-「東海道」「京都  紫震殿」,"[(1, 4, 'PLACE'), (6, 8, 'PLACE'), (9, 12, 'PLACE')]"
-「東海道之内」「京都参内」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「東海道之内」「京」「大内蹴鞠之遊覧」,"[(1, 4, 'PLACE'), (8, 9, 'PLACE'), (11, 13, 'PLACE')]"
-「東海道名所之内」「上加茂」「岩本社」「三本杉」「片岡社」「楼門」「御供所」「若宮」「別雷皇太神宮」「杉尾社」「仮殿」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 18, 'PLACE'), (20, 23, 'PLACE'), (25, 28, 'PLACE'), (30, 32, 'PLACE'), (34, 37, 'PLACE'), (39, 41, 'PLACE'), (43, 49, 'PLACE'), (51, 54, 'PLACE'), (56, 58, 'PLACE')]"
-「東海道名所之内」「京加茂」「山科」「黒谷」「吉田山」「将軍塚」「比叡山」「比良」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 17, 'PLACE'), (19, 21, 'PLACE'), (23, 26, 'PLACE'), (28, 31, 'PLACE'), (33, 36, 'PLACE'), (38, 40, 'PLACE')]"
-「東海道名所之内」「加茂の競馬」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]"
-「東海道名所之内」「糺河原」「糺川原」「みたらし川」「河合社」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 18, 'PLACE'), (20, 25, 'PLACE'), (27, 30, 'PLACE')]"
-「東海道名所之内」「祇園祭礼」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]"
-「東海道 京都名所之内」「島原」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE'), (13, 15, 'PLACE')]"
-「東海道名所」「京洛中ノ内」「五条橋」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE'), (15, 18, 'PLACE')]"
-「東海道名所之内」「京都等持院足利十五代木像之図」,"[(1, 4, 'PLACE'), (10, 15, 'PLACE'), (12, 15, 'PLACE')]"
-「東海道名所つゝき」「羅生門之古図」「春雨ノ社」「金札石刀石トモ云」「鬼カミノハシラ」,"[(1, 4, 'PLACE'), (11, 14, 'PLACE'), (19, 23, 'PLACE')]"
-「東海道之内」「京都御出立」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「東海道名所之内」「下加茂」「☆☆との」「いのうへ社」「二言社」「御供所」「本社御租神」「石☆社」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (21, 26, 'PLACE'), (28, 31, 'PLACE'), (33, 36, 'PLACE'), (38, 43, 'PLACE'), (45, 48, 'PLACE')]"
-「東海道名所之内」「宇治」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]"
-「二見浦」,"[(1, 4, 'PLACE')]"
-「長谷川貞信筆　都名所写真鏡　上篇」,"[(7, 8, 'PLACE')]"
-「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」「愛宕山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE'), (27, 30, 'PLACE')]"
-「都名所之内」「知恩院本堂に傘を見る,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「伏見稲荷社」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「高台寺秋ノ景」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「東福寺通天橋」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]"
-「都名所之内」「西大谷目鏡橋」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]"
-「都名所之内」「音羽山清水寺」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]"
-「都名所之内」「栂尾門前雨中」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「祇園大鳥居」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「三条大はし」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「竜安寺雪曙」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「四条橋より縄手通大和橋を望」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (13, 19, 'PLACE')]"
-「都名所之内」「如意嶽大文字」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]"
-「都名所之内」「比叡山山上より湖水を望」「三上山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (21, 24, 'PLACE')]"
-「都名所之内」「三条大はし」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「北野天満宮境内」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「金閣寺雪景」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「妙心寺雪江松」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「竜安寺雪曙」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「御室仁和寺花盛」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]"
-「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE')]"
-「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」「愛宕山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE'), (27, 30, 'PLACE')]"
-「都名所之内」「高雄奥の院庭中」「清滝川」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE'), (17, 20, 'PLACE')]"
-「都名所之内」「栂尾門前雨中」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]"
-「都名所之内」「愛宕山之図」「清滝川」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (15, 18, 'PLACE')]"
-「都名所之内」「嵐山三軒家より眺望」「となせの滝」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE'), (19, 24, 'PLACE')]"
-「都名所之内」「島原出口光景」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE')]"
-「都名所之内」「島原出口光景」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE')]"
-「京都名所之内」「金閣寺」,"[(1, 2, 'PLACE'), (9, 12, 'PLACE')]"
-「滑稽都名所」「三十三間堂」,"[(3, 4, 'PLACE'), (8, 13, 'PLACE')]"
-「滑稽都名所」「黒谷」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「銀閣寺」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]"
-「滑稽都名所」「耳塚」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「東寺」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「真葛原」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]"
-「滑稽都名所」「内裏」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「大仏」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「平野」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「鞍馬山」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]"
-「滑稽都名所」「広沢」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]"
-「滑稽都名所」「竜安寺」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]"
-「諸国名所百景」「京都祇園祭礼」,"[(9, 11, 'PLACE')]"
-「京洛名所」「二条橋より大文字を望む」,"[(1, 3, 'PLACE'), (7, 10, 'PLACE'), (12, 15, 'PLACE')]"
-「東福寺通天橋」,"[(1, 7, 'PLACE')]"
-「祇園春宵」,"[(1, 3, 'PLACE')]"
-「京都大仏殿大鐘楼」,"[(1, 9, 'PLACE')]"
-「大文字山」,"[(1, 5, 'PLACE')]"
-「銀閣寺新緑」,"[(1, 4, 'PLACE')]"
-「島原大門出口ノ柳」,"[(1, 5, 'PLACE')]"
-「三十三間堂」,"[(1, 6, 'PLACE')]"
-「嵐山渡月橋の夏雨」,"[(1, 6, 'PLACE')]"
-「清水寺秋色」,"[(1, 4, 'PLACE')]"
-「平安　諸大家名所画譜,"[(1, 3, 'PLACE')]"
-「京都諸大家筆　平安諸大家名所画譜目録」,"[(1, 3, 'PLACE'), (7, 9, 'PLACE')]"
-「平安諸大家名所画譜一」「第一応挙筆宇治橋之図」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE')]"
-「平安諸大家名所画譜ニ」「第二景文筆鳳凰堂之図」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE')]"
-「江戸名所百人美女」「するがだい」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]"
-「江戸名所百人美女日本はし」,"[(1, 3, 'PLACE'), (9, 13, 'PLACE')]"
-「江戸名所百人美女」  「柳はし」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]"
-「江戸名所百人美女」「鎧のわたし」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]"
-「江戸名所道戯盡」「二」「両国の夕立」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE')]"
-「江戸名所道戯盡」「四」「御茶の水の釣人」,"[(1, 3, 'PLACE'), (13, 17, 'PLACE')]"
-「江戸名所道戯盡」「五」「飛鳥山の花見」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE')]"
-「江戸名所道外盡」「六」「不忍池」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]"
-「江戸名所道化盡」「七」「新シ橋の大風」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]"
-「江戸名所道外盡」「八」「隅田堤の弥生」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]"
-「江戸名所道化盡」「九」「湯嶋天神の臺」,"[(1, 3, 'PLACE'), (13, 17, 'PLACE')]"
-「江戸名所道外尽」「十」「外神田佐久間町」,"[(1, 3, 'PLACE'), (13, 20, 'PLACE')]"
-「江戸名所道戯盡」「十三」「鎧のわたし七夕祭」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]"
-「江戸名所道戯盡」「十四」「芝赤羽はしの雪中」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]"
-「江戸名所道戯盡」「十六」「王子狐火」,"[(1, 3, 'PLACE')]"
-「江戸名所道化盡」「十七」「通壹丁目祇園會」,"[(1, 3, 'PLACE'), (14, 20, 'PLACE')]"
-「江戸名所道外盡」「二十」「道灌山虫聞」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]"
-「江戸名所道外盡」「廿四」「数寄屋かし」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]"
-「江戸名所道戯盡」「三十五」「吾嬬の森梅見もとり」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]"
-「江戸名所張交図會」「浅草金龍山」「三囲」「雷門」「すみた川」「向嶋花屋鋪」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE'), (18, 20, 'PLACE'), (22, 24, 'PLACE'), (26, 30, 'PLACE'), (32, 37, 'PLACE')]"
-「江戸廼花名勝會」「五番組」「ま」「赤坂」「赤坂奴凧平　尾上多見蔵」「赤坂御門外」,"[(1, 3, 'PLACE'), (18, 20, 'PLACE'), (22, 24, 'PLACE'), (35, 37, 'PLACE')]"
-「江戸の華名勝會」「五番組」「ま」「三河臺」「三河臺　氷川神社」「関東小六　市川市蔵」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE'), (23, 26, 'PLACE'), (27, 31, 'PLACE')]"
-「東京名所四十八景　日本はし夕けしき」,"[(1, 3, 'PLACE'), (10, 14, 'PLACE')]"
-「東京名所四十八景」「神田明神社内年の市」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE'), (16, 20, 'PLACE')]"
-「東京名所四十八景　谷中諏訪の社廿六夜まち」,"[(1, 3, 'PLACE'), (12, 16, 'PLACE')]"
+title,entities,Genre,Artist,Image URL,Permalink
+「東海道　京都之内」「大内能上覧図」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE')]", 名所絵  京都  能楽  紅葉狩 , 芳年,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP0542.jpg,https://www.dh-jac.net/db/nishikie/arcUP0542/2021d7/
+「東海道　京都名所之内」「四条河原」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE'), (13, 17, 'PLACE')]", 京都関連  , 豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP0544.jpg,https://www.dh-jac.net/db/nishikie/arcUP0544/2021d7/
+「東海道名所之内」「御能拝見之図」,"[(1, 4, 'PLACE')]", 能楽, 暁斎,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1649.jpg,https://www.dh-jac.net/db/nishikie/arcUP1649/2021d7/
+「東海道」「京都  紫震殿」,"[(1, 4, 'PLACE'), (6, 8, 'PLACE'), (9, 12, 'PLACE')]",名所絵,芳盛 ,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1732.jpg,https://www.dh-jac.net/db/nishikie/arcUP1732/2021d7/
+「東海道之内」「京都参内」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE')]",名所絵 , 芳盛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1733.jpg,https://www.dh-jac.net/db/nishikie/arcUP1733/2021d7/
+「東海道之内」「京」「大内蹴鞠之遊覧」,"[(1, 4, 'PLACE'), (8, 9, 'PLACE'), (11, 13, 'PLACE')]",名所絵, 芳盛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1734.jpg,https://www.dh-jac.net/db/nishikie/arcUP1734/2021d7/
+「東海道名所之内」「上加茂」「岩本社」「三本杉」「片岡社」「楼門」「御供所」「若宮」「別雷皇太神宮」「杉尾社」「仮殿」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 18, 'PLACE'), (20, 23, 'PLACE'), (25, 28, 'PLACE'), (30, 32, 'PLACE'), (34, 37, 'PLACE'), (39, 41, 'PLACE'), (43, 49, 'PLACE'), (51, 54, 'PLACE'), (56, 58, 'PLACE')]",京都関連  名所絵 ,豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1735.jpg,https://www.dh-jac.net/db/nishikie/arcUP1735/2021d7/
+「東海道名所之内」「京加茂」「山科」「黒谷」「吉田山」「将軍塚」「比叡山」「比良」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 17, 'PLACE'), (19, 21, 'PLACE'), (23, 26, 'PLACE'), (28, 31, 'PLACE'), (33, 36, 'PLACE'), (38, 40, 'PLACE')]",京都関連  名所絵 , 国貞,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1736.jpg,https://www.dh-jac.net/db/nishikie/arcUP1736/2021d7/
+「東海道名所之内」「加茂の競馬」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]",京都関連  名所絵 ,暁斎,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1737.jpg,https://www.dh-jac.net/db/nishikie/arcUP1737/2021d7/
+「東海道名所之内」「糺河原」「糺川原」「みたらし川」「河合社」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (15, 18, 'PLACE'), (20, 25, 'PLACE'), (27, 30, 'PLACE')]",京都関連, 豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1738.jpg,https://www.dh-jac.net/db/nishikie/arcUP1738/2021d7/
+「東海道名所之内」「祇園祭礼」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]",京都関連  祇園祭,芳艶,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1739.jpg,https://www.dh-jac.net/db/nishikie/arcUP1739/2021d7/
+「東海道 京都名所之内」「島原」,"[(1, 4, 'PLACE'), (5, 7, 'PLACE'), (13, 15, 'PLACE')]",京都関連 ,芳幾,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1740.jpg,https://www.dh-jac.net/db/nishikie/arcUP1740/2021d7/
+「東海道名所」「京洛中ノ内」「五条橋」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE'), (15, 18, 'PLACE')]",名所絵,芳盛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1741.jpg,https://www.dh-jac.net/db/nishikie/arcUP1741/2021d7/
+「東海道名所之内」「京都等持院足利十五代木像之図」,"[(1, 4, 'PLACE'), (10, 15, 'PLACE'), (12, 15, 'PLACE')]",京都関連, 暁斎,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1742.jpg,https://www.dh-jac.net/db/nishikie/arcUP1742/2021d7/
+「東海道名所つゝき」「羅生門之古図」「春雨ノ社」「金札石刀石トモ云」「鬼カミノハシラ」,"[(1, 4, 'PLACE'), (11, 14, 'PLACE'), (19, 23, 'PLACE')]",京都関連, 暁斎,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1743.jpg,https://www.dh-jac.net/db/nishikie/arcUP1743/2021d7/
+「東海道之内」「京都御出立」,"[(1, 4, 'PLACE'), (8, 10, 'PLACE')]",名所絵, 芳盛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1931.jpg,https://www.dh-jac.net/db/nishikie/arcUP1931/2021d7/
+「東海道名所之内」「下加茂」「☆☆との」「いのうへ社」「二言社」「御供所」「本社御租神」「石☆社」,"[(1, 4, 'PLACE'), (10, 13, 'PLACE'), (21, 26, 'PLACE'), (28, 31, 'PLACE'), (33, 36, 'PLACE'), (38, 43, 'PLACE'), (45, 48, 'PLACE')]",京都関連, 豊国,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2017.jpg,https://www.dh-jac.net/db/nishikie/arcUP2017/2021d7/
+「東海道名所之内」「宇治」,"[(1, 4, 'PLACE'), (10, 12, 'PLACE')]",京都関連, 国貞,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2018.jpg,https://www.dh-jac.net/db/nishikie/arcUP2018/2021d7/
+「二見浦」,"[(1, 4, 'PLACE')]",上方絵  合羽摺  名所絵  美人画,無款,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP0591.jpg,https://www.dh-jac.net/db/nishikie/arcUP0591/2021d7/
+「長谷川貞信筆　都名所写真鏡　上篇」,"[(7, 8, 'PLACE')]", 風景画  京都関連 , 未詳,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2548.jpg,https://www.dh-jac.net/db/nishikie/arcUP2548/2021d7/
+「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」「愛宕山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE'), (27, 30, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1662.jpg,https://www.dh-jac.net/db/nishikie/arcUP1662/2021d7/
+「都名所之内」「知恩院本堂に傘を見る,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1663.jpg,https://www.dh-jac.net/db/nishikie/arcUP1663/2021d7/
+「都名所之内」「伏見稲荷社」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1664.jpg,https://www.dh-jac.net/db/nishikie/arcUP1664/2021d7/
+「都名所之内」「高台寺秋ノ景」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1665.jpg,https://www.dh-jac.net/db/nishikie/arcUP1665/2021d7/
+「都名所之内」「東福寺通天橋」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1666.jpg,https://www.dh-jac.net/db/nishikie/arcUP1666/2021d7/
+「都名所之内」「西大谷目鏡橋」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1667.jpg,https://www.dh-jac.net/db/nishikie/arcUP1667/2021d7/
+「都名所之内」「音羽山清水寺」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]",名所絵  京都関連 ,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1668.jpg,https://www.dh-jac.net/db/nishikie/arcUP1668/2021d7/
+「都名所之内」「栂尾門前雨中」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1669.jpg,https://www.dh-jac.net/db/nishikie/arcUP1669/2021d7/
+「都名所之内」「祇園大鳥居」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1670.jpg,https://www.dh-jac.net/db/nishikie/arcUP1670/2021d7/
+「都名所之内」「三条大はし」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1671.jpg,https://www.dh-jac.net/db/nishikie/arcUP1671/2021d7/
+「都名所之内」「竜安寺雪曙」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1672.jpg,https://www.dh-jac.net/db/nishikie/arcUP1672/2021d7/
+「都名所之内」「四条橋より縄手通大和橋を望」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (13, 19, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2564.jpg,https://www.dh-jac.net/db/nishikie/arcUP2564/2021d7/
+「都名所之内」「如意嶽大文字」,"[(1, 2, 'PLACE'), (8, 14, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2565.jpg,https://www.dh-jac.net/db/nishikie/arcUP2565/2021d7/
+「都名所之内」「比叡山山上より湖水を望」「三上山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (21, 24, 'PLACE')]",名所絵  京都関連 ,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2566.jpg,https://www.dh-jac.net/db/nishikie/arcUP2566/2021d7/
+「都名所之内」「三条大はし」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2567.jpg,https://www.dh-jac.net/db/nishikie/arcUP2567/2021d7/
+「都名所之内」「北野天満宮境内」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]",名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2568.jpg,https://www.dh-jac.net/db/nishikie/arcUP2568/2021d7/
+「都名所之内」「金閣寺雪景」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2569.jpg,https://www.dh-jac.net/db/nishikie/arcUP2569/2021d7/
+「都名所之内」「妙心寺雪江松」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2570.jpg,https://www.dh-jac.net/db/nishikie/arcUP2570/2021d7/
+「都名所之内」「竜安寺雪曙」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2571.jpg,https://www.dh-jac.net/db/nishikie/arcUP2571/2021d7/
+「都名所之内」「御室仁和寺花盛」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2572.jpg,https://www.dh-jac.net/db/nishikie/arcUP2572/2021d7/
+「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2573.jpg,https://www.dh-jac.net/db/nishikie/arcUP2573/2021d7/
+「都名所之内」「広沢池秋の月」「遍照寺山」「いけ浦」「愛宕山」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (16, 20, 'PLACE'), (22, 25, 'PLACE'), (27, 30, 'PLACE')]",名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2574.jpg,https://www.dh-jac.net/db/nishikie/arcUP2574/2021d7/
+「都名所之内」「高雄奥の院庭中」「清滝川」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE'), (17, 20, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2575.jpg,https://www.dh-jac.net/db/nishikie/arcUP2575/2021d7/
+「都名所之内」「栂尾門前雨中」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE')]", 名所絵  京都関連,貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2576.jpg,https://www.dh-jac.net/db/nishikie/arcUP2576/2021d7/
+「都名所之内」「愛宕山之図」「清滝川」,"[(1, 2, 'PLACE'), (8, 11, 'PLACE'), (15, 18, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2577.jpg,https://www.dh-jac.net/db/nishikie/arcUP2577/2021d7/
+「都名所之内」「嵐山三軒家より眺望」「となせの滝」,"[(1, 2, 'PLACE'), (8, 13, 'PLACE'), (19, 24, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1661.jpg,https://www.dh-jac.net/db/nishikie/arcUP1661/2021d7/
+「都名所之内」「島原出口光景」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE')]", 名所絵  京都関連, 貞信,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2578.jpg,https://www.dh-jac.net/db/nishikie/arcUP2578/2021d7/
+「都名所之内」「島原出口光景」,"[(1, 2, 'PLACE'), (8, 10, 'PLACE')]", 京都関連  名所絵,広重,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1677.jpg,https://www.dh-jac.net/db/nishikie/arcUP1677/2021d7/
+「京都名所之内」「金閣寺」,"[(1, 2, 'PLACE'), (9, 12, 'PLACE')]", 京都関連,芳梅 ,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1760.jpg,https://www.dh-jac.net/db/nishikie/arcUP1760/2021d7/
+「滑稽都名所」「三十三間堂」,"[(3, 4, 'PLACE'), (8, 13, 'PLACE')]", 京都関連 , 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1761.jpg,https://www.dh-jac.net/db/nishikie/arcUP1761/2021d7/
+「滑稽都名所」「黒谷」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 京都関連,芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1762.jpg,https://www.dh-jac.net/db/nishikie/arcUP1762/2021d7/
+「滑稽都名所」「銀閣寺」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]",京都関連, 芳梅 ,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1763.jpg,https://www.dh-jac.net/db/nishikie/arcUP1763/2021d7/
+「滑稽都名所」「耳塚」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1764.jpg,https://www.dh-jac.net/db/nishikie/arcUP1764/2021d7/
+「滑稽都名所」「東寺」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1765.jpg,https://www.dh-jac.net/db/nishikie/arcUP1765/2021d7/
+「滑稽都名所」「真葛原」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]",京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1766.jpg,https://www.dh-jac.net/db/nishikie/arcUP1766/2021d7/
+「滑稽都名所」「内裏」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1768.jpg,https://www.dh-jac.net/db/nishikie/arcUP1768/2021d7/
+「滑稽都名所」「大仏」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 京都関連, 芳梅 ,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP1769.jpg,https://www.dh-jac.net/db/nishikie/arcUP1769/2021d7/
+「滑稽都名所」「平野」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]",名所絵  京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP3433.jpg,https://www.dh-jac.net/db/nishikie/arcUP3433/2021d7/
+「滑稽都名所」「鞍馬山」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]",名所絵  京都関連, 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP3435.jpg,https://www.dh-jac.net/db/nishikie/arcUP3435/2021d7/
+「滑稽都名所」「広沢」,"[(3, 4, 'PLACE'), (8, 10, 'PLACE')]", 名所絵  京都関連 , 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP3436.jpg,https://www.dh-jac.net/db/nishikie/arcUP3436/2021d7/
+「滑稽都名所」「竜安寺」,"[(3, 4, 'PLACE'), (8, 11, 'PLACE')]", 名所絵  京都関連 , 芳梅,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP3437.jpg,https://www.dh-jac.net/db/nishikie/arcUP3437/2021d7/
+「諸国名所百景」「京都祇園祭礼」,"[(9, 11, 'PLACE')]",京都関係, 広重,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2016.jpg,https://www.dh-jac.net/db/nishikie/arcUP2016/2021d7/
+「京洛名所」「二条橋より大文字を望む」,"[(1, 3, 'PLACE'), (7, 10, 'PLACE'), (12, 15, 'PLACE')]", 名所絵  京都関連, 野村芳光,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2022.jpg,https://www.dh-jac.net/db/nishikie/arcUP2022/2021d7/
+「東福寺通天橋」,"[(1, 7, 'PLACE')]",名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2236.jpg,https://www.dh-jac.net/db/nishikie/arcUP2236/2021d7/
+「祇園春宵」,"[(1, 3, 'PLACE')]", 名所絵  京都関連,亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2237.jpg,https://www.dh-jac.net/db/nishikie/arcUP2237/2021d7/
+「京都大仏殿大鐘楼」,"[(1, 9, 'PLACE')]", 名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2238.jpg,https://www.dh-jac.net/db/nishikie/arcUP2238/2021d7/
+「大文字山」,"[(1, 5, 'PLACE')]",名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2239.jpg,https://www.dh-jac.net/db/nishikie/arcUP2239/2021d7/
+「銀閣寺新緑」,"[(1, 4, 'PLACE')]",名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2240.jpg,https://www.dh-jac.net/db/nishikie/arcUP2240/2021d7/
+「島原大門出口ノ柳」,"[(1, 5, 'PLACE')]",名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2241.jpg,https://www.dh-jac.net/db/nishikie/arcUP2241/2021d7/
+「三十三間堂」,"[(1, 6, 'PLACE')]",名所絵  京都関連 , 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2242.jpg,https://www.dh-jac.net/db/nishikie/arcUP2242/2021d7/
+「嵐山渡月橋の夏雨」,"[(1, 6, 'PLACE')]", 名所絵  京都関連, 亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2243.jpg,https://www.dh-jac.net/db/nishikie/arcUP2243/2021d7/
+「清水寺秋色」,"[(1, 4, 'PLACE')]", 名所絵  京都関連,亀井藤兵衛,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2245.jpg,https://www.dh-jac.net/db/nishikie/arcUP2245/2021d7/
+「平安　諸大家名所画譜,"[(1, 3, 'PLACE')]", 京都関連, 無款,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2354a.jpg,https://www.dh-jac.net/db/nishikie/arcUP2354a/2021d7/
+「京都諸大家筆　平安諸大家名所画譜目録」,"[(1, 3, 'PLACE'), (7, 9, 'PLACE')]", 京都関連, 無款,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2354b.jpg,https://www.dh-jac.net/db/nishikie/arcUP2354b/2021d7/
+「平安諸大家名所画譜一」「第一応挙筆宇治橋之図」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE')]", 京都関連 , 応挙,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2355.jpg,https://www.dh-jac.net/db/nishikie/arcUP2355/2021d7/
+「平安諸大家名所画譜ニ」「第二景文筆鳳凰堂之図」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE')]", 京都関連 , 景文,https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP2356.jpg,https://www.dh-jac.net/db/nishikie/arcUP2356/2021d7/
+「江戸名所百人美女」「するがだい」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]",江戸  名所案内記  図絵,豊国,https://data.ukiyo-e.org/metro/images/025-C001-003.jpg,https://www.dh-jac.net/db/nishikie/025-C001-003/2021d7/
+「江戸名所百人美女日本はし」,"[(1, 3, 'PLACE'), (9, 13, 'PLACE')]", 江戸  名所案内記  図絵,豊国,https://data.ukiyo-e.org/metro/images/025-C001-006.jpg,https://www.dh-jac.net/db/nishikie/025-C001-006/2021d7/
+「江戸名所百人美女」  「柳はし」,"[(1, 3, 'PLACE'), (11, 14, 'PLACE')]", 江戸  名所案内記  図絵,豊国,https://data.ukiyo-e.org/metro/images/025-C001-009.jpg,https://www.dh-jac.net/db/nishikie/025-C001-009/2021d7/
+「江戸名所百人美女」「鎧のわたし」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE')]",江戸  名所案内記  図絵  ,豊国,https://data.ukiyo-e.org/metro/images/025-C001-015.jpg,https://www.dh-jac.net/db/nishikie/025-C001-015/2021d7/
+「江戸名所道戯盡」「二」「両国の夕立」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE')]",江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-003.jpg,https://www.dh-jac.net/db/nishikie/025-C003-003/2021d7/
+「江戸名所道戯盡」「四」「御茶の水の釣人」,"[(1, 3, 'PLACE'), (13, 17, 'PLACE')]", 各区  本郷  小石川（第四大区）  本郷 , 広景,https://data.ukiyo-e.org/metro/images/0451-C003.jpg,https://www.dh-jac.net/db/nishikie/0451-C003/2021d7/
+「江戸名所道戯盡」「五」「飛鳥山の花見」,"[(1, 3, 'PLACE'), (13, 15, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-006.jpg,https://www.dh-jac.net/db/nishikie/025-C003-006/2021d7/
+「江戸名所道外盡」「六」「不忍池」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-007.jpg,https://www.dh-jac.net/db/nishikie/025-C003-007/2021d7/
+「江戸名所道化盡」「七」「新シ橋の大風」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]",江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-008.jpg,https://www.dh-jac.net/db/nishikie/025-C003-008/2021d7/
+「江戸名所道外盡」「八」「隅田堤の弥生」,"[(1, 3, 'PLACE'), (13, 16, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-009.jpg,https://www.dh-jac.net/db/nishikie/025-C003-009/2021d7/
+「江戸名所道化盡」「九」「湯嶋天神の臺」,"[(1, 3, 'PLACE'), (13, 17, 'PLACE')]", 江戸  名所案内記  図絵 ,広景,https://data.ukiyo-e.org/metro/images/025-C003-010.jpg,https://www.dh-jac.net/db/nishikie/025-C003-010/2021d7/
+「江戸名所道外尽」「十」「外神田佐久間町」,"[(1, 3, 'PLACE'), (13, 20, 'PLACE')]", 名所絵  戯画  名所案内記  図絵, 広景 ,https://data.ukiyo-e.org/metro/images/025-C003-011.jpg,https://www.dh-jac.net/db/nishikie/025-C003-011/2021d7/
+「江戸名所道戯盡」「十三」「鎧のわたし七夕祭」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]", 名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-014.jpg,https://www.dh-jac.net/db/nishikie/025-C003-014/2021d7/
+「江戸名所道戯盡」「十四」「芝赤羽はしの雪中」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-015.jpg,https://www.dh-jac.net/db/nishikie/025-C003-015/2021d7/
+「江戸名所道戯盡」「十六」「王子狐火」,"[(1, 3, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-017.jpg,https://www.dh-jac.net/db/nishikie/025-C003-017/2021d7/
+「江戸名所道化盡」「十七」「通壹丁目祇園會」,"[(1, 3, 'PLACE'), (14, 20, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-018.jpg,https://www.dh-jac.net/db/nishikie/025-C003-018/2021d7/
+「江戸名所道外盡」「二十」「道灌山虫聞」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]", 江戸  名所案内記  図絵  , 広景,https://data.ukiyo-e.org/metro/images/025-C003-021.jpg,https://www.dh-jac.net/db/nishikie/025-C003-021/2021d7/
+「江戸名所道外盡」「廿四」「数寄屋かし」,"[(1, 3, 'PLACE'), (14, 19, 'PLACE')]", 江戸  名所案内記  図絵 , 広景,https://data.ukiyo-e.org/metro/images/025-C003-025.jpg,https://www.dh-jac.net/db/nishikie/025-C003-025/2021d7/
+「江戸名所道戯盡」「三十五」「吾嬬の森梅見もとり」,"[(1, 3, 'PLACE'), (14, 17, 'PLACE')]", 江戸  名所案内記  図絵, 広景,https://data.ukiyo-e.org/metro/images/025-C003-036.jpg,https://www.dh-jac.net/db/nishikie/025-C003-036/2021d7/
+「江戸名所張交図會」「浅草金龍山」「三囲」「雷門」「すみた川」「向嶋花屋鋪」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE'), (18, 20, 'PLACE'), (22, 24, 'PLACE'), (26, 30, 'PLACE'), (32, 37, 'PLACE')]", 江戸  名所案内記  図絵, 広重,https://data.ukiyo-e.org/metro/images/025-C004.jpg,https://www.dh-jac.net/db/nishikie/025-C004/2021d7/
+「江戸廼花名勝會」「五番組」「ま」「赤坂」「赤坂奴凧平　尾上多見蔵」「赤坂御門外」,"[(1, 3, 'PLACE'), (18, 20, 'PLACE'), (22, 24, 'PLACE'), (35, 37, 'PLACE')]", 江戸  名所  品物,豊国,https://data.ukiyo-e.org/metro/images/026-C001-004.jpg,https://www.dh-jac.net/db/nishikie/026-C001-004/2021d7/
+「江戸の華名勝會」「五番組」「ま」「三河臺」「三河臺　氷川神社」「関東小六　市川市蔵」,"[(1, 3, 'PLACE'), (18, 21, 'PLACE'), (23, 26, 'PLACE'), (27, 31, 'PLACE')]", 江戸  名所  品物, 春海、豊国,https://data.ukiyo-e.org/metro/images/026-C001-010.jpg,https://www.dh-jac.net/db/nishikie/026-C001-010/2021d7/
+「東京名所四十八景　日本はし夕けしき」,"[(1, 3, 'PLACE'), (10, 14, 'PLACE')]",,昇斎一景,https://data.ukiyo-e.org/metro/images/035-077-01.jpg,https://www.dh-jac.net/db/nishikie/035-077-01/2021d7/
+「東京名所四十八景」「神田明神社内年の市」,"[(1, 3, 'PLACE'), (11, 16, 'PLACE'), (16, 20, 'PLACE')]",,昇斎一景,https://data.ukiyo-e.org/metro/images/035-077-04.jpg,https://www.dh-jac.net/db/nishikie/035-077-04/2021d7/
+「東京名所四十八景　谷中諏訪の社廿六夜まち」,"[(1, 3, 'PLACE'), (12, 16, 'PLACE')]",,昇斎一景,https://data.ukiyo-e.org/metro/images/035-077-07.jpg,https://www.dh-jac.net/db/nishikie/035-077-07/2021d7/
