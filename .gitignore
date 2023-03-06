@@ -7,3 +7,4 @@ results/*
 # Git Ignore Public Repository
 /Pipfile.lock
 
+/data/images/
