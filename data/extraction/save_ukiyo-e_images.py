@@ -7,7 +7,7 @@ from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 
 def full_data():
     # read dataset
-    df_all = pd.read_csv('../../data/arc_meisho.csv')
+    df_all = pd.read_csv('../arc_meisho.csv')
 
     df_all = df_all.drop(df_all.columns[0], axis=1)
 
@@ -116,10 +116,10 @@ def top_n_frequent_entities(df, entity_col, title_col, entity_label, n=200):
 
 def train_test_data():
     df_train = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TRAIN_TITLE,
-                               data_path='../../data/').loader()  # read dataset
+                               data_path='../').loader()  # read dataset
 
     df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE,
-                              data_path='../../data/').loader()
+                              data_path='../').loader()
 
     print(df_train.columns)
 
