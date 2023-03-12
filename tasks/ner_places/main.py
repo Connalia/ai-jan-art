@@ -6,7 +6,7 @@ from tasks.ukiyo_loader import UkiyoDataLoader, UkiyoDataOptions
 from tasks.ner_places.gazetteer import ModelGazetteer
 from tasks.ner_places.geolod import ModelGeolod
 
-from src.models.unsupervised.bert_retrain import FineTuneBERT
+from src.models.unsupervised.bert_retrain import FurtherBERT
 
 from src.models.supervised.bert_ner import NerBERT
 
@@ -28,7 +28,7 @@ class NerModel(StrEnum):
     GAZETTEER = auto()
     GEOLOD = auto()
     BERT_NER = auto()
-    FINE_TUNE_BERT_NER = auto()
+    FURTHER_BERT_NER = auto()
     SPACY = auto()
 
 
@@ -49,13 +49,13 @@ def main(models: list) -> None:
         NerBERT(Train=Train, Test=Test, checkpoint='cl-tohoku/bert-base-japanese',
                 tokinizer_name='cl-tohoku/bert-base-japanese').runner()
 
-    if NerModel.FINE_TUNE_BERT_NER in models:
+    if NerModel.FURTHER_BERT_NER in models:
         # --> BERT Fine-tune to Mask Language Task with All Ukiyo-e Titles
         df_ukiyo = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.FULL_MEISHO,
                                    data_path='data/').loader()
 
-        FineTuneBERT(checkpoint="cl-tohoku/bert-base-japanese",
-                     df=df_ukiyo).runner()
+        FurtherBERT(checkpoint="cl-tohoku/bert-base-japanese",
+                    df=df_ukiyo).runner()
 
         # --> BERT Transfer learning to NER with labeled Ukiyo-e Titles
         df_test = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.TEST_TITLE).loader()
@@ -67,5 +67,5 @@ def main(models: list) -> None:
 if __name__ == "__main__":
     model_run = [  # NerModel.GAZETTEER,
         NerModel.GEOLOD,
-        NerModel.FINE_TUNE_BERT_NER]
+        NerModel.FURTHER_BERT_NER]
     main(models=model_run)

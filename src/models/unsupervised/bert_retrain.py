@@ -1,4 +1,4 @@
-__all__ = ['FineTuneBERT']
+__all__ = ['FurtherBERT']
 
 import pandas as pd
 from transformers import AutoTokenizer
@@ -15,8 +15,12 @@ import math
 
 SEED = 42
 
+'''
+Fine tune based on Hugging Face, but we named Further Pretrain Model
+'''
 
-class FineTuneBERT:
+
+class FurtherBERT:
     """
     Mask Language Model further train of Hugging Face pretrain BERT model
 
@@ -230,5 +234,5 @@ class FineTuneBERT:
 ######################################################################
 
 if __name__ == "__main__":
-    FineTuneBERT(checkpoint="cl-tohoku/bert-base-japanese",
-                 dataset_path=".../.../.../arc_meisho_full.csv").runner()
+    FurtherBERT(checkpoint="cl-tohoku/bert-base-japanese",
+                dataset_path=".../.../.../arc_meisho_full.csv").runner()
