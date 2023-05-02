@@ -4,9 +4,14 @@
   for places that extract from Bert model
 
 - `arc_meisho.csv`: the whole dataset with ukiyo-e from Art Research Center's
+  Ukiyo-e Portal Database for meisho with meta info (AcNo,CoGNo,title,title_roman,
+  publisher,publisher_roman,period,year,place,thumb_url,artist,artist_r,signature,seal,
+  technique,material,genre,theme,series,name,site_url)
+
+- `arc_meisho_old.csv`: the whole dataset with ukiyo-e from Art Research Center's
   Ukiyo-e Portal Database
 
-- `arc_meisho_full.csv`: the whole dataset with ukiyo-e from Art Research Center's
+- `arc_meisho_full_old.csv`: the whole dataset with ukiyo-e from Art Research Center's
   Ukiyo-e Portal Database + with extra column without unsuseful metainfo
 
 |                    title |                                   full_title |

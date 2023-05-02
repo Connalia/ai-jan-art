@@ -21,8 +21,9 @@ class UkiyoDataOptions(StrEnum):
     # Sorted Class Variable
     TRAIN_TITLE = auto()  # train_place.csv: train set with annonated tag PLACE
     TEST_TITLE = auto()  # test_place.csv: test set with annonated tag PLACE
-    FULL_MEISHO = auto()  # arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info
-    MEISHO = auto()  # arc_meisho.csv: whole dataset without annotations
+    MEISHO = auto()  # arc_meisho_old.csv: whole meisho dataset from ARC db
+    FULL_MEISHO_OLD = auto()  # arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info
+    MEISHO_OLD = auto()  # arc_meisho_old.csv: whole dataset without annotations
 
     @staticmethod
     def meta_info():
@@ -35,8 +36,8 @@ class UkiyoDataOptions(StrEnum):
         +-------------+--------------------------------------------------------------------------------------+
         |   Variable  |                                         Name                                         |
         +-------------+--------------------------------------------------------------------------------------+
-        |    MEISHO   | arc_meisho.csv: whole dataset without annot. + preprocessing to be as  FULL_MEISHO   |
-        | FULL_MEISHO | arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info |
+        |    MEISHO   | arc_meisho_old.csv: whole dataset without annot. + preprocessing to be as  FULL_MEISHO   |
+        | FULL_MEISHO | arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info |
         |  TEST_TITLE |                  test_place.csv: test set with annonated tag PLACE                   |
         | TRAIN_TITLE |                 train_place.csv: train set with annonated tag PLACE                  |
         +-------------+--------------------------------------------------------------------------------------+
@@ -46,8 +47,8 @@ class UkiyoDataOptions(StrEnum):
 
         names = ['train_place.csv: train set with annonated tag PLACE',
                  'test_place.csv: test set with annonated tag PLACE',
-                 'arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info',
-                 'arc_meisho.csv: whole dataset without annotations',
+                 'arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info',
+                 'arc_meisho_old.csv: whole dataset without annotations',
                  ]
         print('Information for variables:')
         table = [list(zipped) for zipped in
@@ -61,8 +62,8 @@ class UkiyoDataOptions(StrEnum):
 #     # Sorted Class Variable
 #     TRAIN_TITLE = 'TRAIN_TITLE'  # train_place.csv: train set with annonated tag PLACE
 #     TEST_TITLE = 'TEST_TITLE'  # test_place.csv: test set with annonated tag PLACE
-#     FULL_MEISHO = 'FULL_MEISHO'  # arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info
-#     MEISHO = 'MEISHO'  # arc_meisho.csv: whole dataset without annotations
+#     FULL_MEISHO = 'FULL_MEISHO'  # arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info
+#     MEISHO = 'MEISHO'  # arc_meisho_old.csv: whole dataset without annotations
 #
 #     @staticmethod
 #     def meta_info():
@@ -75,8 +76,8 @@ class UkiyoDataOptions(StrEnum):
 #         +-------------+--------------------------------------------------------------------------------------+
 #         |   Variable  |                                         Name                                         |
 #         +-------------+--------------------------------------------------------------------------------------+
-#         |    MEISHO   |                  arc_meisho.csv: whole dataset without annotations                   |
-#         | FULL_MEISHO | arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info |
+#         |    MEISHO   |                  arc_meisho_old.csv: whole dataset without annotations                   |
+#         | FULL_MEISHO | arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info |
 #         |  TEST_TITLE |                  test_place.csv: test set with annonated tag PLACE                   |
 #         | TRAIN_TITLE |                 train_place.csv: train set with annonated tag PLACE                  |
 #         +-------------+--------------------------------------------------------------------------------------+
@@ -84,8 +85,8 @@ class UkiyoDataOptions(StrEnum):
 #
 #         names = ['train_place.csv: train set with annonated tag PLACE',
 #                  'test_place.csv: test set with annonated tag PLACE',
-#                  'arc_meisho_full.csv: whole dataset without annot. + title without unuseful meta info'
-#                  'arc_meisho.csv: whole dataset without annotations',
+#                  'arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info'
+#                  'arc_meisho_old.csv: whole dataset without annotations',
 #                  ]
 #         print('Information for variables:')
 #         table = [list(zipped) for zipped in
@@ -152,6 +153,12 @@ class UkiyoDataLoader:
 
             self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho.csv')
 
+        elif self.type_of_dataset == UkiyoDataOptions.MEISHO_OLD:
+
+            print('Warning: Depricated Dataset!!!')
+
+            self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho_old.csv')
+
             # drop first column that belong to index
             self.df_ukiyo = self.df_ukiyo.iloc[:, 1:]
 
@@ -161,9 +168,11 @@ class UkiyoDataLoader:
             self.df_ukiyo.rename(columns={"link": "thub_img_link"}, inplace=True)
             self.df_ukiyo["actual_img_link"] = self.df_ukiyo["thub_img_link"].str.replace('th_image', 'image')
 
-        elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO:
+        elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO_OLD:
 
-            self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho_full.csv')
+            print('Warning: Depricated Dataset!!!')
+
+            self.df_ukiyo = pd.read_csv(self.data_path + 'arc_meisho_full_old.csv')
 
         else:  # user select not exist dataset
             while True:
@@ -182,5 +191,5 @@ class UkiyoDataLoader:
 if __name__ == "__main__":
     df_ukiyo = UkiyoDataLoader(type_of_dataset=UkiyoDataOptions.MEISHO,
                                data_path='../data/').loader()
-    df_ukiyo.to_csv('../data/arc_meisho_full.csv', index=False)
+    df_ukiyo.to_csv('../data/arc_meisho_full_old.csv', index=False)
     print(df_ukiyo)

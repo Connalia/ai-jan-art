@@ -235,4 +235,4 @@ class FurtherBERT:
 
 if __name__ == "__main__":
     FurtherBERT(checkpoint="cl-tohoku/bert-base-japanese",
-                dataset_path=".../.../.../arc_meisho_full.csv").runner()
+                dataset_path=".../.../.../arc_meisho_full_old.csv").runner()
