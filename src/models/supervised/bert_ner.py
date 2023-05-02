@@ -10,6 +10,8 @@ from transformers import DataCollatorForLanguageModeling
 from transformers import TrainingArguments
 from transformers import Trainer
 
+from termcolor import colored
+
 from sklearn.metrics import classification_report, accuracy_score
 
 import numpy as np
@@ -542,6 +544,95 @@ class NerBERT():
         print(f"Validation Accuracy: {eval_accuracy}")
 
         return labels, predictions
+
+    def predict_sentence(self, sentence):
+
+        inputs = self.tokenizer(sentence,
+                                padding='max_length',
+                                max_length=self.MAX_LEN,
+                                return_tensors="pt")
+        # item = {key: torch.as_tensor(val) for key, val in encoding.items()}
+
+        # move to gpu
+        ids = inputs["input_ids"].to(device)
+        mask = inputs["attention_mask"].to(device)
+        # forward pass
+        outputs = self.model(ids, attention_mask=mask)
+        logits = outputs[0]
+
+        active_logits = logits.view(-1, self.model.num_labels)  # shape (batch_size * seq_len, num_labels)
+        flattened_predictions = torch.argmax(active_logits,
+                                             axis=1)  # shape (batch_size*seq_len,) - predictions at the token level
+
+        tokens = self.tokenizer.convert_ids_to_tokens(ids.squeeze().tolist())
+        token_predictions = [self.ids_to_labels[i] for i in flattened_predictions.cpu().numpy()]
+        wp_preds = list(zip(tokens, token_predictions))  # list of tuples. Each tuple = (wordpiece, prediction)
+
+        prediction = []
+        prediction_all = []
+        # set predicted labels
+        for token_pred in range(len(wp_preds)):
+
+            if wp_preds[token_pred][0] == '[CLS]' or wp_preds[token_pred][0] == '[SEP]' or wp_preds[token_pred][
+                0] == '[PAD]':
+                continue
+            elif wp_preds[token_pred][1] == 'O':
+                prediction_all.append(wp_preds[token_pred])
+            else:
+                # predictions
+                prediction.append(wp_preds[token_pred])
+                prediction_all.append(wp_preds[token_pred])
+                # print(wp_preds[token_pred][0])
+
+        return prediction, prediction_all
+
+    def inference(self, df_titles: pd.Series):
+        titles = []
+        tags_pred = []
+        pos_pred = []
+
+        count = 0
+        for i in tqdm(range(len(df_titles))):
+            count += 1
+
+            # # ERROR: from indexing
+            # if count==28 or count==73 or count==76 or count==138:
+            #     continue
+
+            sentence = df_titles[i]  # eg "「東海道　京都之内」「大内能上覧図」"
+            prediction, prediction_all = self.predict_sentence(sentence)
+
+            print('Title:', count, colored((sentence), 'red', attrs=['bold']))
+            print('Predictions:', prediction)
+
+            # doc2 = nlp.make_doc(sentence)
+
+            # spans = []
+            # for pred in prediction: # eg pred = ('東海道', 'LOC')
+            #     #Find start and end positions of all occurrences within a string in Python
+            #     text = pred[0] # eg pred[0] = '東海道'
+            #     text = text.replace('##\\','「')
+            #     text = text.replace('##や','「')
+            #     text = text.replace('[','「')
+            #     for match in re.finditer(text, sentence):
+            #         temp = [match.start(), match.end(),pred[1]] # eg pred[1] = 'LOC'
+            #         spans.append(temp)
+
+            # print(spans)
+
+            titles.append(sentence)
+            tags_pred.append(prediction)
+            # pos_pred.append(spans)
+
+        # intialise data of lists.
+        data_silver = {'Title': titles,
+                       'Tags': tags_pred}
+
+        # Calling DataFrame constructor on list
+        df_silver = pd.DataFrame(data_silver)
+        print(df_silver)
+
+        df_silver.to_csv('silver.csv', index=False)
 
 
 if __name__ == "__main__":

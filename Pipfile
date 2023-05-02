@@ -15,6 +15,7 @@ prettytable = "*"
 python-dotenv = "*"
 scikit-learn = "*"
 transformers = "*"
+termcolor = "*"
 
 [dev-packages]
 
