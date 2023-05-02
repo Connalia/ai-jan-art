@@ -22,7 +22,7 @@ class UkiyoDataOptions(StrEnum):
     TRAIN_TITLE = auto()  # train_place.csv: train set with annonated tag PLACE
     TEST_TITLE = auto()  # test_place.csv: test set with annonated tag PLACE
     MEISHO = auto()  # arc_meisho_old.csv: whole meisho dataset from ARC db
-    FULL_MEISHO_OLD = auto()  # arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info
+    FULL_MEISHO = auto()  # arc_meisho_full_old.csv: whole dataset without annot. + title without unuseful meta info
     MEISHO_OLD = auto()  # arc_meisho_old.csv: whole dataset without annotations
 
     @staticmethod
@@ -168,7 +168,7 @@ class UkiyoDataLoader:
             self.df_ukiyo.rename(columns={"link": "thub_img_link"}, inplace=True)
             self.df_ukiyo["actual_img_link"] = self.df_ukiyo["thub_img_link"].str.replace('th_image', 'image')
 
-        elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO_OLD:
+        elif self.type_of_dataset == UkiyoDataOptions.FULL_MEISHO:
 
             print('Warning: Depricated Dataset!!!')
 
